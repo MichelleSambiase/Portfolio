@@ -1,0 +1,2 @@
+En cuanto se abra la pagina una animacion, una foto mia.
+ keyframes con animacion/imagen
