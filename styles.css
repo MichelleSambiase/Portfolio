@@ -185,7 +185,7 @@
     font-family: "Finger Paint", cursive;
     font-size: 3rem;
     -webkit-transform: rotate(270deg);
-    /* transform-origin: 50% 50%; */
+     transform-origin: 50% 50%; 
   }
   .yo {
     max-height: 400px;
