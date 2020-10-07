@@ -183,7 +183,7 @@
     transition-duration: 0.5s;
     color: #f9f6f7;
     font-family: "Finger Paint", cursive;
-    font-size: 4rem;
+    font-size: 3rem;
     -webkit-transform: rotate(270deg);
     /* transform-origin: 50% 50%; */
   }
