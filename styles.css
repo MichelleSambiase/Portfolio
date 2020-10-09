@@ -144,6 +144,9 @@
   .skills-text{
     text-align: left;
   }
+  .skills-list{
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -179,6 +182,9 @@
   .skills-text{
     text-align: left;
     margin-top: 5%;
+  }
+  .skills-list{
+    text-align: left;
   }
 
   .contactos {
@@ -218,7 +224,7 @@
     margin-left: 20px;
     transform: translateY(40px);
   }
-  .skills-text{
+  .skills-list{
     text-align: left;
   }
    .contactos {
