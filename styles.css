@@ -218,6 +218,9 @@
     margin-left: 20px;
     transform: translateY(40px);
   }
+  .skills-text{
+    text-align: left;
+  }
    .contactos {
     font-family: "Spectral", serif !important;
     max-height: 300px; 
