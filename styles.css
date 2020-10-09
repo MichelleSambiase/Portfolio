@@ -1,4 +1,4 @@
-/*MEDIAS QUERISNEGRIII*/
+/*MEDIAS QUERIES*/
 @media screen and (max-width: 540px) /*hasta 540 pixeles*/ {
   div.sobreMi p {
     font-size: 1rem !important;
@@ -9,6 +9,13 @@
     font-size: 1.5rem !important;
     transform: translateY(12px);
     margin-left: 40px !important;
+  }
+  .footer .datos {
+    font-family: "Spectral", serif;
+    font-size: 1.5rem;
+    top: 50px;
+    right: 25px;
+    text-align: center;
   }
 }
 
@@ -31,29 +38,32 @@
   .footer {
     width: 100%;
   }
-  .footer .container .row div {
+  .footer .datos {
     font-family: "Spectral", serif;
     font-size: 1.5rem;
-  }
+    top: 50px;
+    right: 25px;
+    text-align: center;
+  } 
   .contactos {
     width: 33.333%;
-    -webkit-transform: rotate(90deg) translate(60px, 0px) !important;
+    -webkit-transform: rotate(90deg) translate(80px, -20px) !important;
   }
 
   .yo {
     width: 33.333%;
-    -webkit-transform: rotate(90deg) translate(60px, 0px) !important;
+    -webkit-transform: rotate(90deg) translate(30px, -120px) !important;
   }
 
   .personal-site {
     width: 33.333%;
-    -webkit-transform: rotate(90deg) translate(60px, 0px) !important;
+    -webkit-transform: rotate(90deg) translate(-20px, -220px) !important;
   }
 
   .skills-title {
     text-align: center;
     margin: 0 !important;
-    /*  padding: 40px; */
+    
   }
 
   .skills-text {
@@ -74,30 +84,34 @@
     margin: 0% !important;
     width: 100%;
     padding-bottom: 150px;
+    text-align: center;
   }
-  .footer .row div {
+  .footer .datos {
     font-family: "Spectral", serif !important;
     font-size: 2rem;
     position: relative;
-    top: 100px;
+    top: 50px;
+    text-align: center;
+    margin: 0!important;
+
   }
   .skills-title {
     text-align: center;
   }
   .contactos {
     width: 33.333%;
-    -webkit-transform: rotate(90deg) translate(60px, 0px) !important;
+    -webkit-transform: rotate(90deg) translate(60px, -20px) !important;
   }
 
   .yo {
     width: 33.333%;
-    -webkit-transform: rotate(90deg) translate(60px, 0px) !important;
+    -webkit-transform: rotate(90deg) translate(30px, -220px) !important;
   }
 
   .personal-site {
     width: 33.333%;
-    -webkit-transform: rotate(90deg) translate(60px, 0px) !important;
-  }
+    -webkit-transform: rotate(90deg) translate(-80px, -420px) !important;
+  } 
 }
 
 @media screen and (min-width: 576px) {
@@ -131,11 +145,6 @@
     letter-spacing: 0.5rem;
     font-size: 2rem !important;
   }
-
-  .footer {
-    top: 1500px !important;
-    width: 100%;
-  }
 }
 
 @media screen and (min-width: 992px) {
@@ -157,49 +166,36 @@
     font-size: 2rem !important;
   }
 
-  .footer {
-    top: 1800px !important;
-  }
-  .footer .row div {
+  .footer .datos{
     font-family: "Spectral", serif !important;
-    font-size: 2.5rem;
+    font-size: 3rem;
     position: relative;
-    top: 100px;
+    left: 25px; 
   }
   .skills-title {
     margin: 0%;
     text-align: center;
   }
+
   .contactos {
     font-family: "Spectral", serif !important;
-    max-height: 500px;
-    height: 10vw;
+    max-height: 300px; 
     width: 33.333%;
-    -webkit-transform: rotate(90deg) translate(60px, 0px) !important;
+    -webkit-transform: rotate(90deg) translate(90px, -20px) !important;
     transition-duration: 0.5s;
   }
-  a,
-  p:hover {
-    transition-duration: 0.5s;
-    color: #f9f6f7;
-    font-family: "Finger Paint", cursive;
-    font-size: 3rem;
-    -webkit-transform: rotate(270deg);
-     transform-origin: 50% 50%; 
-  }
+  
   .yo {
-    max-height: 400px;
-    height: 10vw;
+    max-height: 300px;
     width: 33.333%;
-    -webkit-transform: rotate(90deg) translate(60px, 0px) !important;
+    -webkit-transform: rotate(90deg) translate(50px, -250px) !important;
     transition-duration: 0.5s;
   }
 
   .personal-site {
-    max-height: 400px;
-    height: 10vw;
+    max-height: 300px;
     width: 33.333%;
-    -webkit-transform: rotate(90deg) translate(60px, 0px) !important;
+    -webkit-transform: rotate(90deg) translate(-100px, -500px) !important;
     transition-duration: 0.5s;
   }
 }
@@ -218,55 +214,55 @@
     margin-left: 20px;
     transform: translateY(40px);
   }
-
-  .footer {
-    padding: 150px;
-    top: 100px !important;
-  }
-
-  .contactos {
-    font-family: "Spectral", serif;
+   .contactos {
+    font-family: "Spectral", serif !important;
+    max-height: 300px; 
     width: 33.333%;
-    max-height: 400px;
-    height: 10vw;
-    margin: 0 !important;
-    transform: rotate(90deg);
-    transform-origin: 30% 50%;
-    -webkit-transform: rotate(90deg) translate(-290px, 29px);
+    -webkit-transform: rotate(90deg) translate(100px, 50px) !important;
     transition-duration: 0.5s;
+    transform-origin: 50% 50%; 
   }
-
+  
   .yo {
-    font-family: "Spectral", serif;
+    max-height: 300px;
     width: 33.333%;
-    max-height: 400px;
-    height: 10vw;
-    margin: 0 !important;
-    transform: rotate(90deg);
-    transform-origin: 30% 50%;
-    -webkit-transform: rotate(90deg) translate(-290px, 29px);
+    -webkit-transform: rotate(90deg) translate(80px, -350px) !important;
     transition-duration: 0.5s;
+    transform-origin: 50% 50%; 
   }
+
   .personal-site {
-    font-family: "Spectral", serif;
+    max-height: 300px;
     width: 33.333%;
-    max-height: 400px;
-    height: 10vw;
-    margin: 0 !important;
-    transform: rotate(90deg);
-    transform-origin: 30% 50%;
-    -webkit-transform: rotate(90deg) translate(-290px, 29px);
+    -webkit-transform: rotate(90deg) translate(-60px, -750px) !important;
     transition-duration: 0.5s;
+    transform-origin: 50% 50%; 
+  }
+
+  .contactos, p:hover {
+    transition-duration: 0.5s;
+    color: #f9f6f7;
+    font-family: "Finger Paint", cursive;
+    font-size: 3.5rem;
+    -webkit-transform: rotate(270deg);
+    transform-origin: 50% 50%; 
+  }
+  .yo, p:hover {
+    transition-duration: 0.5s;
+    font-size: 3.5rem;
+    -webkit-transform: rotate(270deg);
+    transform-origin: 50% 50%; 
+  }
+  .personal-site, p:hover {
+    transition-duration: 0.5s;
+    font-size: 3.5rem;
+    -webkit-transform: rotate(270deg);
+    transform-origin: 50% 50%; 
   }
 }
 
-@media (min-width: 1440px) {
-  .footer {
-    top: 2000px !important;
-    width: 100%;
-    left: 0px !important;
-  }
-}
+
+
 
 .galeria {
   background: rgb(236, 227, 238);
@@ -489,6 +485,9 @@ a h4 {
     rgba(194, 203, 203, 1) 100%
   );
 }
+.datos{
+  width: 100%;
+}
 
 p {
   text-decoration: none !important;
@@ -505,7 +504,6 @@ p {
   margin-bottom: 2rem;
   border: 0;
   height: 2px;
-  /* ackground-image: -webkit-linear-gradient(left, #c5d7dc, #e5bfed, #c5d7d5); */
   background: linear-gradient(
     20deg,
     rgba(236, 227, 238, 1) 13%,
