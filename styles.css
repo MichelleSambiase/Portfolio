@@ -1,5 +1,8 @@
-/*MEDIAS QUERIES*/
-@media screen and (max-width: 540px) /*hasta 540 pixeles*/ {
+/*MEDIAS QUERISNEGRIII*/
+@media screen and (max-width: 540px)
+
+/*hasta 540 pixeles*/
+  {
   div.sobreMi p {
     font-size: 1rem !important;
   }
@@ -10,16 +13,12 @@
     transform: translateY(12px);
     margin-left: 40px !important;
   }
-  .footer .datos {
-    font-family: "Spectral", serif;
-    font-size: 1.5rem;
-    top: 50px;
-    right: 25px;
-    text-align: center;
-  }
 }
 
 @media screen and (max-width: 500px) {
+  .galeria::before{
+    height: 100%;
+  }
   div.sobreMi p {
     font-size: 1rem !important;
   }
@@ -35,40 +34,36 @@
     letter-spacing: 0.5rem;
     font-size: 1.5rem !important;
   }
+
   .footer {
     width: 100%;
   }
-  .footer .datos {
+
+  .footer .container .row div {
     font-family: "Spectral", serif;
     font-size: 1.5rem;
-    top: 50px;
-    right: 25px;
-    text-align: center;
-  } 
-  .contactos {
-    width: 33.333%;
-    -webkit-transform: rotate(90deg) translate(80px, -20px) !important;
-  }
-
-  .yo {
-    width: 33.333%;
-    -webkit-transform: rotate(90deg) translate(30px, -120px) !important;
-  }
-
-  .personal-site {
-    width: 33.333%;
-    -webkit-transform: rotate(90deg) translate(-20px, -220px) !important;
   }
 
   .skills-title {
     text-align: center;
     margin: 0 !important;
-    
+    /*  padding: 40px; */
+  }
+
+  .skills-text {
+    margin-top: 50px;
   }
 }
 
-@media screen and (min-width: 500px) /*desde 500px*/ {
+@media screen and (min-width: 500px)
+/*desde 500px*/
+  
+{
+    .galeria::before{
+    height: 100%;
+  }
   div.sobreMi p {
+    margin: 0 !important;
     font-size: 1rem !important;
     transform: translateY(10px);
   }
@@ -76,41 +71,28 @@
   h1 {
     margin-left: 15px;
   }
+
   .footer {
     margin: 0% !important;
     width: 100%;
-    padding-bottom: 150px;
-    text-align: center;
   }
-  .footer .datos {
+
+  .footer .row div {
     font-family: "Spectral", serif !important;
     font-size: 2rem;
     position: relative;
-    top: 50px;
-    text-align: center;
-    margin: 0!important;
-
+    top: 100px;
   }
+
   .skills-title {
     text-align: center;
   }
-  .contactos {
-    width: 33.333%;
-    -webkit-transform: rotate(90deg) translate(60px, -20px) !important;
-  }
-
-  .yo {
-    width: 33.333%;
-    -webkit-transform: rotate(90deg) translate(30px, -220px) !important;
-  }
-
-  .personal-site {
-    width: 33.333%;
-    -webkit-transform: rotate(90deg) translate(-80px, -420px) !important;
-  } 
 }
 
 @media screen and (min-width: 576px) {
+  .galeria::before{
+    height: 130%;
+  }
   div.sobreMi p {
     font-size: 1.5rem !important;
   }
@@ -122,8 +104,14 @@
 }
 
 @media screen and (min-width: 768px) {
+  .galeria::before{
+    height: 60%;
+  }
   div.sobreMi p {
-    font-size: 1.8rem !important;
+    position: relative;
+    right: 50px;
+    margin-top: 20% !important;
+    font-size: 1.5rem !important;
   }
 
   div.imagen {
@@ -141,20 +129,26 @@
     letter-spacing: 0.5rem;
     font-size: 2rem !important;
   }
-  .skills-text{
-    text-align: left;
-  }
-  .skills-list{
-    text-align: left;
+
+  .footer {
+    top: 1500px !important;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 992px) {
+  .galeria::before{
+    height: 55%;
+  }
   div.sobreMi p {
-    font-size: 2.5rem !important;
+   
+    position: relative;
+    right: 50px;
+    font-size: 2.2rem !important;
   }
 
   div.imagen {
+   
     margin-top: 8%;
   }
 
@@ -168,49 +162,27 @@
     font-size: 2rem !important;
   }
 
-  .footer .datos{
-    font-family: "Spectral", serif !important;
-    font-size: 3rem;
-    position: relative;
-    left: 25px; 
+  .footer {
+    top: 1900px !important;
   }
+
+  .footer .row div {
+    font-family: "Spectral", serif !important;
+    font-size: 2.5rem;
+    position: relative;
+    top: 100px;
+  }
+
   .skills-title {
     margin: 0%;
     text-align: center;
   }
-  
-  .skills-text{
-    text-align: left;
-    margin-top: 5%;
-  }
-  .skills-list{
-    text-align: left;
-  }
-
-  .contactos {
-    font-family: "Spectral", serif !important;
-    max-height: 300px; 
-    width: 33.333%;
-    -webkit-transform: rotate(90deg) translate(90px, -20px) !important;
-    transition-duration: 0.5s;
-  }
-  
-  .yo {
-    max-height: 300px;
-    width: 33.333%;
-    -webkit-transform: rotate(90deg) translate(50px, -250px) !important;
-    transition-duration: 0.5s;
-  }
-
-  .personal-site {
-    max-height: 300px;
-    width: 33.333%;
-    -webkit-transform: rotate(90deg) translate(-100px, -500px) !important;
-    transition-duration: 0.5s;
-  }
 }
 
 @media (min-width: 1200px) {
+  .galeria::before{
+    height: 125%;
+  }
   .galeria .container {
     max-width: 1600px !important;
   }
@@ -220,77 +192,68 @@
   }
 
   h1 {
+    font-size: 2.5rem !important;
     letter-spacing: 0.5rem;
     margin-left: 20px;
     transform: translateY(40px);
   }
-  .skills-list{
-    text-align: left;
-  }
-   .contactos {
-    font-family: "Spectral", serif !important;
-    max-height: 300px; 
-    width: 33.333%;
-    -webkit-transform: rotate(90deg) translate(100px, 50px) !important;
-    transition-duration: 0.5s;
-    transform-origin: 50% 50%; 
-  }
-  
-  .yo {
-    max-height: 300px;
-    width: 33.333%;
-    -webkit-transform: rotate(90deg) translate(80px, -350px) !important;
-    transition-duration: 0.5s;
-    transform-origin: 50% 50%; 
-  }
 
-  .personal-site {
-    max-height: 300px;
-    width: 33.333%;
-    -webkit-transform: rotate(90deg) translate(-60px, -750px) !important;
-    transition-duration: 0.5s;
-    transform-origin: 50% 50%; 
+  .footer {
+     top: 1600px !important;  
   }
-
-  .contactos, p:hover {
-    transition-duration: 0.5s;
-    color: #f9f6f7;
-    font-family: "Finger Paint", cursive;
-    font-size: 3.5rem;
-    -webkit-transform: rotate(270deg);
-    transform-origin: 50% 50%; 
+}
+@media (min-width: 1338px) {
+  .galeria::before{
+    height: 120%;
   }
-  .yo, p:hover {
-    transition-duration: 0.5s;
-    font-size: 3.5rem;
-    -webkit-transform: rotate(270deg);
-    transform-origin: 50% 50%; 
-  }
-  .personal-site, p:hover {
-    transition-duration: 0.5s;
-    font-size: 3.5rem;
-    -webkit-transform: rotate(270deg);
-    transform-origin: 50% 50%; 
+  .footer {
+    top: 1650px !important;  
+    left: 0px !important;
   }
 }
 
+@media (min-width: 1450px) {
+  .galeria::before{
+    height: 140%;
+  }
+  .footer {
+    top: 1800px !important;
+    left: 0px !important;
+  }
+} 
 
+@media (min-width: 1600px) {
+  .galeria::before{
+    height: 100%;
+  }
+  .footer {
+    top: 1900px !important;
+    left: 0px !important;
+  }
+} 
 
+/* BODY */
+ .galeria::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  /* height: 100%; */
+  background-image: url("imagenes/fondo8.jpg");  background-size: cover;
+  overflow:hidden;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+} 
+.galeria{
+  background-size: 2000px; 
+  background-repeat: no-repeat;
 
-.galeria {
-  background: rgb(236, 227, 238);
-  background: linear-gradient(
-    274deg,
-    rgba(236, 227, 238, 1) 13%,
-    rgba(194, 203, 203, 1) 100%
-  );
 }
 
 h1 {
   font-family: "Spectral", serif;
   font-weight: lighter !important;
   color: #fafafa;
-  padding: 5% 0% 0% 0%;
+  /* padding: 5% 0% 0% 0%; */
 }
 
 .box {
@@ -298,21 +261,21 @@ h1 {
   margin-bottom: 10%;
 }
 
-.box > .bordes {
+.box>.bordes {
   border: 1px solid rgba(255, 255, 255, 0.5);
   background-clip: padding-box;
   transition-duration: 0.5s;
   padding: 0% 0% 5% 0%;
 }
 
-.box > .bordes:hover {
+.box>.bordes:hover {
   border: 1px solid rgb(241, 241, 241, 0.2);
   transition-duration: 0.5s;
 }
 
 .galeria img {
   border-radius: 1%;
-  width: 100%;
+  width: 80%;
   height: auto;
   animation: fade-in ease 3s;
   margin: 0% !important;
@@ -339,7 +302,7 @@ h1 {
   font-weight: lighter;
   color: #fafafa;
   text-align: center;
-  margin-top: 15% !important;
+  margin-top: 50% !important;
   margin-bottom: 10% !important;
 }
 
@@ -351,16 +314,14 @@ h1 {
 
 .proyectos {
   position: relative;
-  z-index: 1;
   margin: 50px;
   padding: 10%;
   margin: 2% 2% 0% 2%;
-  background: rgb(236, 227, 238);
-  background: linear-gradient(
-    274deg,
-    rgba(236, 227, 238, 1) 14%,
-    rgba(194, 203, 203, 1) 72%
-  );
+ /*  background: #f6f5f5; */
+  background-image: url("imagenes/blur4.jpg"); 
+  background-size: 10000px auto;
+  background-repeat: no-repeat;
+
 }
 
 .proyectos .cardisita {
@@ -370,23 +331,25 @@ h1 {
 }
 
 .titulo {
+  transition-duration: 0.8s;
   margin: 0 !important;
   display: grid;
   justify-content: center;
-  padding: 50px;
+  padding: 100px;
   border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.titulo:hover {
+  border: 1px solid rgba(51, 50, 50, 0.568);
+  transition-duration: 0.5s;
 }
 
 h3 {
   font-weight: lighter !important;
-  color: #f9f6f7;
+  color: #52575d;
   font-family: "Spectral", serif;
 }
 
-.titulo:hover {
-  border: 1px solid rgb(241, 241, 241, 0.2);
-  transition-duration: 0.5s;
-}
+
 
 .cardisita {
   display: grid;
@@ -489,17 +452,11 @@ a h4 {
 /*                        FOOTEEEEEEEEEEEEEEEEER                                          */
 
 .footer {
-  position: absolute;
-  z-index: 1;
-  background: rgb(236, 227, 238);
-  background: linear-gradient(
-    0deg,
-    rgba(236, 227, 238, 1) 13%,
-    rgba(194, 203, 203, 1) 100%
-  );
-}
-.datos{
-  width: 100%;
+  margin: 2% 2% 0% 0% !important;
+  background-image: url("imagenes/blur5.jpg");
+  background-size: 1900px auto;
+  background-repeat: no-repeat;
+
 }
 
 p {
@@ -517,19 +474,17 @@ p {
   margin-bottom: 2rem;
   border: 0;
   height: 2px;
-  /* ackground-image: -webkit-linear-gradient(left, #c5d7dc, #e5bfed, #c5d7d5); */
-  background: linear-gradient(
-    20deg,
-    rgba(236, 227, 238, 1) 13%,
-    rgba(194, 203, 203, 1) 100%
-  );
+  background: linear-gradient(20deg,
+      rgb(228, 221, 222) 40%,
+      rgb(243, 210, 210) 100%);
 }
 
 /*SKILL BAR*/
 
 #skills {
   padding: 20px 15px 75px 15px;
-  color: #fff;
+   color: #fff; 
+ 
 }
 
 .skills-text {
@@ -545,6 +500,7 @@ p {
   font-size: 3rem;
   font-family: "Spectral", serif;
   margin-bottom: 3rem;
+  color: #c1c1c1;
 }
 
 .skills-title.underline:before {
@@ -552,7 +508,6 @@ p {
 }
 
 .skills-list {
-  text-align: left;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
@@ -564,18 +519,15 @@ p {
   background-color: #999797;
   content: "";
   display: block;
-
   position: relative;
   top: 3px;
-
   width: 100%;
 }
 
 .skill-percent {
   font-size: 0;
-  height: 3px;
+  height: 2px;
   position: relative;
-
   transition: 3s linear;
   width: 0;
 }
@@ -583,50 +535,67 @@ p {
 /* SKILL BAR COLORS */
 
 .skill-percent-html {
-  background-color: #fef6fb;
+  background-color: #bbbbbb;
 }
 
 .skill-percent-css {
-  background-color: #fef6fb;
+  background-color:  #bbbbbb;
 }
 
 .skill-percent-jquery {
-  background-color: #fef6fb;
+  background-color:  #bbbbbb;
 }
 
 .skill-percent-scss {
-  background-color: #fef6fb;
+  background-color: #bbbbbb;
 }
 
 .skill-percent-javascript {
-  background-color: #fef6fb;
+  background-color:  #bbbbbb;
 }
 
 .skill-percent-responsive {
-  background-color: #fef6fb;
+  background-color:  #bbbbbb;
 }
 
-.skill-percent-php {
-  background-color: #fef6fb;
-}
 
-.skill-percent-git {
-  background-color: #fef6fb;
-}
 
 /* Heading Underline */
 
-.underline {
-  display: inline-block;
-  position: relative;
+#lab_social_icon_footer {
+  padding: 5px 0;
+ /*  background-color: #dedede; */
 }
 
-.underline:before {
-  background-color: #fff;
-  bottom: -15px;
-  content: "";
-  height: 2px;
-  left: 0;
-  position: absolute;
-  width: 110%;
+#lab_social_icon_footer a {
+  -webkit-transition-duration: 0.5s;
+  color: #c1c1c1;
+}
+
+#lab_social_icon_footer .social:hover {
+  -webkit-transform: scale(1.1);
+}
+
+#lab_social_icon_footer .social {
+  -webkit-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+}
+/*
+    Colores Hover
+*/
+
+#lab_social_icon_footer #social-fb:hover {
+  color: #3B5998;
+}
+
+#lab_social_icon_footer #social-tw:hover {
+  color: #4099FF;
+}
+
+#lab_social_icon_footer #social-gp:hover {
+  color: #3f3f44;
+}
+
+#lab_social_icon_footer #social-em:hover {
+  color: #a12312;
 }
