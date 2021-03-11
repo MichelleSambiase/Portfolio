@@ -3,16 +3,7 @@
 
 /*hasta 540 pixeles*/
   {
-  div.sobreMi p {
-    font-size: 1rem !important;
-  }
-
-  h1 {
-    letter-spacing: 5px;
-    font-size: 1.5rem !important;
-    transform: translateY(12px);
-    margin-left: 40px !important;
-  }
+  
 }
 
 @media screen and (max-width: 500px) {
@@ -32,15 +23,100 @@
   .galeria::before{
     height: 100%;
   }
-  div.sobreMi p {
-    font-size: 1rem !important;
+  .galeria img {
+    border-radius: 10%;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    animation: float 1s ease-in-out infinite;
+  }
+  @keyframes float {
+    0% {
+      
+      transform: translatey(0px);
+    }
+    50% {
+      
+      transform: translatey(-15px);
+    }
+    100% {
+      
+      transform: translatey(0px);
+    }
+  }
+  /*.galeria, img:hover { transform: scale(1.2); }*/
+  
+  @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
   }
 
-  h1 {
-    letter-spacing: 2px;
-    font-size: 1.5rem !important;
-    transform: translateY(12px);
-    margin-left: 40px !important;
+  div.sobreMi  {
+    color: #34495e;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Cinzel';
+   
+ 
+  }
+  div.sobreMi h2{
+    text-align: center;
+    font-size: 25px;
+    color: #383e56;
+
+    overflow: hidden; 
+    white-space: nowrap; 
+    animation: 
+      typing 1.5s steps(80, end),
+      blink-caret .5s step-end infinite;
+  }
+  @keyframes typing {
+    from { width: 0% }
+    to { width: 100% }
+  }
+
+  @keyframes typingDos {
+    from { width: 0 }
+    to { width: 100%}
+  }
+  @keyframes typingTres {
+    from { width: 0 }
+    to { width: 70% }
+  }
+  
+ 
+
+  .ocultarMeta{
+    opacity: 1;
+  }
+ 
+  .mostrarMeta{
+    font-size: 15px;
+    width: max-content;
+    overflow: hidden; 
+    white-space: nowrap; 
+
+    opacity: 1;
+  }
+
+  .mostrarMetaTres{
+    font-size: 25px;
+    width: max-content;
+    overflow: hidden; 
+    white-space: nowrap; 
+
+    opacity: 1;
   }
 
 
@@ -83,16 +159,41 @@
     height: 100%;
   }
 
-  div.sobreMi p {
-    margin: 0 !important;
-    font-size: 1rem !important;
-    transform: translateY(10px);
+  .galeria img {
+    border-radius: 10%;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    animation: float 1s ease-in-out infinite;
   }
-
-  h1 {
-    margin-left: 15px;
+  @keyframes float {
+    0% {
+      
+      transform: translatey(0px);
+    }
+    50% {
+      
+      transform: translatey(-15px);
+    }
+    100% {
+      
+      transform: translatey(0px);
+    }
   }
-
+  /*.galeria, img:hover { transform: scale(1.2); }*/
+  
+  @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
   .footer {
     margin: 0% !important;
     width: 100%;
@@ -167,7 +268,93 @@
   .galeria::before{
     height: 60%;
   }
+  
+  .galeria img {
+    border-radius: 10%;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: float 1s ease-in-out infinite;
+  }
   div.sobreMi  {
+    color: #34495e;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-family: 'Cinzel';
+  
+ 
+  }
+  div.sobreMi h2{
+
+    font-size: 2rem;
+    color: #383e56;
+    width: 155px;
+    overflow: hidden; 
+    white-space: nowrap; 
+    margin: 0;
+    margin-right: 0 auto;
+    animation: 
+      typing 1s steps(15, end),
+      blink-caret .5s step-end infinite;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 15% }
+  }
+
+  @keyframes typingDos {
+    from { width: 0 }
+    to { width: 100%}
+  }
+  @keyframes typingTres {
+    from { width: 0 }
+    to { width: 70% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(61, 61, 61) }
+  }
+
+  .linea{
+    border-right: .1em solid rgb(51, 50, 50);
+  }
+  .ocultarMeta{
+    opacity: 0;
+  }
+ 
+  .mostrarMeta{
+    font-size: 2rem;
+    width: max-content;
+    overflow: hidden; 
+    white-space: nowrap; 
+    margin-top: 20px;
+    animation: 
+      typingDos 3.8s steps(50, end),
+      blink-caret .5s step-end infinite;
+    opacity: 1;
+  }
+
+  .mostrarMetaTres{
+    font-size: 2rem;
+    width: max-content;
+    overflow: hidden; 
+    white-space: nowrap; 
+    animation: 
+      typingTres 3.8s steps(50, end),
+      blink-caret .5s step-end infinite;
+    opacity: 1;
+  }
+
+
+}
+
+@media screen and (min-width: 992px) {
+ div.sobreMi  {
     color: #34495e;
     width: 100%;
     height: 100%;
@@ -182,8 +369,6 @@
     width: 155px;
     overflow: hidden; 
     white-space: nowrap; 
-    margin: 0;
-    margin-right: auto;
     position: relative;
     bottom: 20px;
     right: 20px;
@@ -239,44 +424,29 @@
     opacity: 1;
   }
 
-
-
-  .footer {
-    top: 1500px !important;
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 992px) {
-
  .division{
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: row-reverse;
+
   width: 100%;
   
  }
 
   .division img {
+    float: right;
     height: auto;
     width: 40%;
     margin: 0 auto;
     opacity: 0;
     transition: all 0.5s ease-in;
+    display: block;
+    position: relative;
  }
 
   .division img.animate {
     opacity: 1;
     transition: all 0.5s ease-in;
  }
- .texto-encima{
-  position: absolute;
- 
-}
-.centrado{
-  position: absolute;
-  transform: translate(-50%, -50%);
-}
+
+
    
   .galeria::before{
     height: 55%;
