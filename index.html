@@ -9,7 +9,9 @@
   <!-- <link rel="stylesheet" href="/normalize.css" /> -->
   <!-- links google fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Lora&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Lora&family=Open+Sans+Condensed:wght@300&display=swap"
+    rel="stylesheet">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -37,16 +39,23 @@
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-<!-- Font awesome -->
-<script src="https://kit.fontawesome.com/027aa4ed5c.js" crossorigin="anonymous"></script>
 
-<!-- CDN AOS-->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/027aa4ed5c.js" crossorigin="anonymous"></script>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- CDN AOS-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- body -->
   <title>Michelle Sambiase Portfolio</title>
@@ -55,164 +64,399 @@
 <body>
   <header>
 
-  
-    <nav  id="nav" class="navegacion navbar-expand-lg navbar-light ">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+
+    <nav id="nav" class="navegacion navbar-expand-lg navbar-light ">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">  
-      <ul class="main-nav">
-        <li><a id="nav-bar" href="#n">Inicio</a></li>
-        <li><a id="nav-bar" href="#">Proyectos</a></li>
-        <li><a id="nav-bar"  href="#">Habilidades</a></li>
-        <li><a id="nav-bar"  href="#">Contacto</a></li>
-    </ul>
-  </div>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="main-nav">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mi</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
     </nav>
 
-    
+
 
 
     <div class="content">
-    <section class="galeria">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-            <div class="box">
+      <section class="galeria">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <div class="box">
                 <div class="row col">
-                  <div class="imagen col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-4">
+                  <div class="imagen col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4">
                     <img src="imagenes/mujerProgramando.png" class="" alt="" />
                   </div>
-
-                  <div class="col-sm-12 col-md-7 col-lg-6 col-xl-8">
+                  <div class="contenido-yo col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-8">
                     <div class="sobreMi">
-                      <div>
-                        <h2 id='saludo' class="linea">¡Hola!</h2>                                       
-                          <h4 id="metas" class="ocultarMeta">Mi nombre es Michelle Sambiase y soy </h4>                      
-                          <h4 id="metasDos" class="ocultarMeta">desarrolladora Front-End.</h4>                              
+                      <h2 id='saludo' class="linea">¡Hola!</h2>
+                      <h4 id="metas" class="ocultarMeta">Mi nombre es Michelle Sambiase y soy </h4>
+                      <h4 id="metasDos" class="ocultarMeta">desarrolladora Front-End.</h4>
                     </div>
                   </div>
                 </div>
+              </div>
             </div>
           </div>
         </div>
+
+      </section>
+
+      <div class="scroll-down">
+        <svg class="arrows">
+          <path class="a1" d="M0 0 L30 32 L60 0"></path>
+          <path class="a2" d="M0 20 L30 52 L60 20"></path>
+          <path class="a3" d="M0 40 L30 72 L60 40"></path>
+        </svg>
       </div>
-    </section>
+    </div>
   </header>
+
   <!-- MAIN -->
 
   <main>
 
-    <div>
-      <div class="container">
-        <div class="row">
-          <div class="division">
-             <img src="/imagenes/ideas.png" alt="">
-          <div class="datos"><h3>Sobre Mi</h3></div>
-            
-            
+    <div class="container-fluid" id="sobre-mi">
+      <div class="row">
+        <div class="contenido-p">
+          <div class="about-me">
+            <h2 class="texto-bio" data-aos="fade-zoom-in" data-aos-duration="1000"><span>
+                <span class="objeto">{</span>
+                <br />
+                <span> <span class="contenido-color">Estudio</span> de forma autodidacta <span
+                    class="contenido-puntos">... <br /></span>
+                </span> estos son <span class="contenido-color">algunos</span> de los cursos que realice para mi <span
+                  class="contenido-color">formacion </span> <br />
+                <span class="objeto">}</span>
+              </span>
+            </h2>
+          </div>
+          <div class="division ">
+            <img src="/imagenes/idea.png" alt="">
           </div>
         </div>
       </div>
     </div>
 
-   
-      <div class="container">
-        <div class="rows">
-          <div class="titulo col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-            
+    <div class="contenido-cursos">
+      <div class="d-flex" data-aos="fade-zoom-in" data-aos-duration="1000">
+        <div class="card-box">
+          <div class="header-card">
+            <div class="back"></div>
+            <img src="/imagenes/codoAcodo.png">
+            <h3 class="card-title"></h3>
+          </div>
+          <div class="card-content">
+            <p> Desarrollo Web Full Stack - Programa Codo a Codo 4.0
+            </p>
           </div>
         </div>
+      </div>
 
-      
-        <div class=" row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-4">
-          <div class="col mb-3 cardisita">
-            <div class="card">
-              <div class="cardImg"></div>
-              <a href="https://chelle95.github.io/skincare-page/" class="cardLink skin">
-                <h4>Skincare Page</h4>
-              </a>
-            </div>
+      <div class="d-flex" data-aos="fade-zoom-in" data-aos-duration="3000">
+        <div class="card-box-digitalers">
+          <div class="header-card">
+            <div class="back-digitalers"></div>
+            <img class="digitalers" src="/imagenes/digitalers.jpg">
+            <h3 class="card-title"></h3>
           </div>
-
-          <div class="cardisita col mb-3">
-            <div class="card">
-              <div class="cardImgD"></div>
-              <a href=" https://chelle95.github.io/Drum-kits/" class="cardLink drums">
-                <h4>Drums Kit</h4>
-              </a>
-            </div>
+          <div class="card-content">
+            <p> Desarrollo Full Stack con .NET - Programa Digitalers - Telecom - EducacionIT </p>
           </div>
-
-          <div class="col mb-3 cardisita">
-            <div class="card">
-              <div class="cardImgS"></div>
-              <a href=" https://chelle95.github.io/Simon-Game/" class="cardLink simon">
-                <h4>Simon Dice</h4>
-              </a>
-            </div>
-          </div>
-
-          <div class="col mb-3 cardisita">
-            <div class="card">
-              <div class="proceso"></div>
-              <a href="#" class="cardLink">
-                <h4></h4>
-              </a>
-
-            </div>
-          </div>
-
         </div>
-
       </div>
     </div>
+
+
+
+
+    <div class="container" id="proyectos">
+      <div class="row">
+        <div class="contenido-proyectos">
+          <div class="proyectos">
+            <div class="about-proyectos" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="800"
+              data-aos-offset="0">
+              <h2 class="texto-bio">
+                <span class="contenido-color tituloP">proyectos</span>
+                </span>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="card-proyectos">
+        <a href="https://chelle95.github.io/skincare-page/">
+          <div class="card" data-aos="fade-zoom-in" data-aos-duration="1000">
+            <div class="description">
+              <h3>Skincare Page</h3>
+              <p class="descripcion-de-proyectos">
+                Web app sobre el cuidado de la piel. Realizada con Boostrap y CSS3.
+              </p>
+              <div></div>
+            </div>
+            <img src="/imagenes/rutina9.jpg" />
+            <h2>
+              Skincare Page
+            </h2>
+          </div>
+
+        </a>
+        <a href="https://chelle95.github.io/skincare-page/">
+          <div class="card" data-aos="zoom-out" data-aos-duration="1000">
+            <div class="description">
+              <h3>Drum Kit</h3>
+              <p class="descripcion-de-proyectos">
+                Web app interactiva de bateria. Creada con JavaScript.
+              </p>
+              <div></div>
+            </div>
+            <img src="/imagenes/drums3.jpg" />
+            <h2>
+              Drums Kit
+            </h2>
+          </div>
+        </a>
+
+        <a href="https://chelle95.github.io/skincare-page/">
+          <div class="card" data-aos="zoom-out" data-aos-duration="1000">
+            <div class="description">
+              <h3>Simon Say</h3>
+              <p class="descripcion-de-proyectos">
+                Web app El famoso Juego "Simon Dice" creada con JavaScript.
+              </p>
+              <div></div>
+            </div>
+            <img src="/imagenes/simon1.jpg" />
+            <h2>
+              Simon Dice
+            </h2>
+          </div>
+        </a>
+        <a href="https://chelle95.github.io/skincare-page/">
+          <div class="card" data-aos="zoom-out" data-aos-duration="2000">
+            <div class="description">
+              <h3>Dogs App</h3>
+              <p class="descripcion-de-proyectos">
+                Web app creada con React.js. y CSS3. Proyecto de practica con manejo de errores.
+              </p>
+              <div></div>
+            </div>
+            <img src="/imagenes/dogsAPI.png" />
+            <h2>
+              Dogs Api
+            </h2>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!--HABILIDADES-->
+
+    <div class="container-fluid fondo-medio" id="habilidades">
+      <div class="row">
+        <div class="contenido-habilidades">
+          <div class="proyectos">
+            <div class="about-proyectos" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="800"
+              data-aos-offset="0">
+              <h2 class="texto-bio">
+                <span class="contenido-colorH tituloH">Habilidades</span>
+                </span>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!--cards de habilidades-->
+
+      <div class="row">
+        <div class="card-habilidades">
+          <div class="card-habilidades1">
+            <div>
+              <div class="card-skills" data-aos="zoom-out" data-aos-duration="3000">
+                <span><i class="fab fa-html5 skills-icon"></i></span>
+
+                <div class="description-skills">
+                  <h3>HTML5</h3>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="card-skills" data-aos="zoom-out" data-aos-duration="3000">
+                <i class="fab fa-css3-alt skills-icon"></i>
+                <div class="description-skills">
+                  <h3>CSS3</h3>
+                  <p>
+                  </p>
+                  <div></div>
+                </div>
+
+                <h2>
+                </h2>
+              </div>
+            </div>
+
+            <div>
+              <div class="card-skills" data-aos="zoom-out" data-aos-duration="3000">
+                <i class="fab fa-bootstrap skills-icon"></i>
+                <div class="description-skills">
+                  <h3>Bootstrap</h3>
+                  <p>
+                  </p>
+                  <div></div>
+                </div>
+
+                <h2>
+                  Bootstrap
+                </h2>
+              </div>
+            </div>
+
+            <div>
+              <div class="card-skills" data-aos="zoom-out" data-aos-duration="3000">
+                <i class="fab fa-js-square skills-icon"></i>
+                <div class="description-skills">
+                  <h3>JavaScript</h3>
+                  <p>
+                  </p>
+                  <div></div>
+                </div>
+
+                <h2>
+                </h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-habilidades2">
+            <div>
+              <div class="card-skills" data-aos="zoom-out" data-aos-duration="1000">
+                <i class="fas fa-project-diagram skills-icon"></i>
+                <div class="description-skills">
+                  <h3>.NET</h3>
+                  <p>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="card-skills" data-aos="zoom-out" data-aos-duration="2000">
+                <i class="fas fa-database skills-icon"></i>
+                <div class="description-skills">
+                  <h3>SQL Express</h3>
+                  <p>
+                  </p>
+                  <div></div>
+                </div>
+
+                <h2>
+                </h2>
+              </div>
+            </div>
+
+            <div>
+              <div class="card-skills" data-aos="zoom-out" data-aos-duration="3000">
+                <i class="fab fa-react skills-icon"></i>
+                <div class="description-skills">
+                  <h3>React</h3>
+                  <p>
+                  </p>
+                  <div></div>
+                </div>
+
+                <h2>
+                </h2>
+              </div>
+            </div>
+
+            <div>
+              <div class="card-skills" data-aos="zoom-out" data-aos-duration="3000">
+                <i class="fab fa-git skills-icon"></i>
+                <div class="description-skills">
+                  <h3>Git</h3>
+                  <p>
+                  </p>
+                  <div></div>
+                </div>
+
+                <h2>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
+  <!--footer-->
 
-<!--
-  <footer>
-    <div class="footer__inner">
-      <div class="logo">Logo</div>
-      <nav>
-        <a href="">© Company name</a>
-        <div class="social">
-          <a href="">F</a>
-          <a href="">T</a>
-          <a href="">In</a>
-          <a href="">@</a>
-        </div>
-      </nav>
-    </div>
-  </footer>
- 
-        <section id="lab_social_icon_footer">
-           Include Font Awesome Stylesheet in Header 
-          <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-          
-          <div class="container">
-                  <div class="text-center center-block">
-                        <a href="https://www.facebook.com/michelle.campos.3557/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
-                        <a href="https://www.linkedin.com/in/michelle-florencia-sambiase-campos-073824110/"><i id="social-tw" class="fab fa-linkedin-square fa-3x social"></i></a>
-                        <a href="https://github.com/chelle95"><i id="social-gp" class="fa fa-github fa-3x social"></i></a>                                      
-                        <a href="https://mail.google.com/mail/u/1/#inbox"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
-              </div>
+  <footer id="contacto" class="fondo-footer">
+    <div class="container-padre">
+      <div class="container">
+        <div class="contenido-final">
+          <div class="footer-title">
+            <div class="nombre-y-apellido"><span>
+                &#60;</span><span class="nombre"> Michelle
+              </span> <span class="apellido">Sambiase </span><span>/></span></div>
           </div>
-          </section>
 
-        --> 
- 
+        </div>
+
+        <div class="frases-footer">
+          <div class="frases-footer-positivas">
+            <div class="efecto-blur">
+            <p class="parrafo">#APRENDER</p>
+          </div>
+        </div>
+          <div class="frases-footer-positivas">
+            <p>#EXPERIENCIAS</p>
+          </div>
+          <div class="frases-footer-positivas">
+            <p>#PACIENCIA</p>
+          </div>
+          <div class="frases-footer-positivas">
+            <p>#VALORAR</p>
+          </div>
+          <div class="frases-footer-positivas">
+            <p>#ESFUERZO</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
-    
+    <div class="text-center center-block">
+      <div class="icons-footer">
+        <a href="https://www.behance.net/michellsambias" data-aos="fade-down" data-aos-easing="linear"
+          data-aos-duration="1000"><i class="fab fa-behance social" id="social-be"></i></i></a>
+        <a href="https://www.linkedin.com/in/michelle-florencia-sambiase-campos-073824110/" data-aos="fade-down"
+          data-aos-easing="linear" data-aos-duration="900"><i id="social-tw"
+            class="fab fa-linkedin-square fa-3x social"></i></a>
+        <a href="https://github.com/chelle95" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="900"><i
+            id="social-gp" class="fa fa-github fa-3x social"></i></a>
+        <a href="mailto:michellesambiase@gmail.com?Subject=Ingrese%20Asunto" data-aos="fade-down"
+          data-aos-duration="1000"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+      </div>
+    </div>
 
-
-
-
-
- 
-
-</div>
+    <span>
+      <hr /></span>
+    <div class="create-by"><span>Creado con 💜 </span></div>
+  </footer>
   <script src="app.js"></script>
 
 
