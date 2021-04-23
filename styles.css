@@ -38,9 +38,6 @@ body {
 .main {
   background-size: 100000px;
 }
-.contenido-cursos {
-  background: url(imagenes/pinkback.jpg);
-}
 
 .contenido-p {
   background: linear-gradient(0deg, rgba(61, 96, 116, 0.26234243697478987) 0%, rgba(61, 96, 116, 1) 100%);
@@ -57,12 +54,7 @@ body {
     rgba(61, 96, 116, 0.3603816526610645) 83%
   );
 }
-.fondo-footer {
-  background: url(imagenes/blanco.jpg);
-  background-size: cover;
-  background-size: 100000px;
-  background-repeat: no-repeat;
-}
+
 .container-padre {
   height: 700px;
   display: flex;
