@@ -107,7 +107,7 @@ document.querySelector(".card-box-digitalers").onclick = function (e) {
 };
 
 //Funcion Back to top
-var amountScrolled = 3000;
+var amountScrolled = 3800;
 
 $(window).scroll(function () {
   if ($(window).scrollTop() > amountScrolled) {
