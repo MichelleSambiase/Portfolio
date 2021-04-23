@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background: url(/imagenes/blanco.jpg);
+  background: url(imagenes/blanco.jpg);
   background-size: 1000000px;
   background-repeat: no-repeat;
 }
@@ -39,7 +39,7 @@ body {
   background-size: 100000px;
 }
 .contenido-cursos {
-  background: url(/imagenes/pinkback.jpg);
+  background: url(imagenes/pinkback.jpg);
 }
 
 .contenido-p {
@@ -58,7 +58,7 @@ body {
   );
 }
 .fondo-footer {
-  background: url(/imagenes/blanco.jpg);
+  background: url(imagenes/blanco.jpg);
   background-size: cover;
   background-size: 100000px;
   background-repeat: no-repeat;
