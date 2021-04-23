@@ -3677,7 +3677,7 @@ body {
   }
   /*footer*/
   .fondo-footer {
-    height: 850px;
+    height: 900px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -3761,8 +3761,13 @@ body {
   .overlay:hover {
     opacity: 0.6;
   }
+
+  hr {
+    margin-bottom: -50px !important;
+  }
   /*icons footer*/
   .icons-footer {
+    margin-bottom: -50px;
     display: flex;
     justify-content: center;
   }
