@@ -2,6 +2,47 @@ html {
   scroll-behavior: smooth;
 }
 
+/* BODY */
+
+a {
+  text-decoration: none !important;
+}
+.navegacion {
+  background-color: #fff;
+}
+
+.galeria {
+  transition: box-shadow 500ms;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+.galeria:hover {
+  box-shadow: 20px 5px 11px 0px rgb(124 123 140);
+  border-radius: 5px;
+}
+/*Animacion del header*/
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-15px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 body {
   background: url(imagenes/blanco.jpg);
   background-size: 1000000px;
@@ -85,6 +126,78 @@ body {
   100% {
     opacity: 0;
   }
+}
+/*Arrow up style*/
+
+button.back-to-top {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #fff;
+  height: 0px;
+  width: 0px;
+  overflow: hidden;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  color: transparent;
+  clear: both;
+  visibility: hidden;
+  position: fixed;
+  cursor: pointer;
+  display: block;
+  border: none;
+  right: 50px;
+  bottom: 75px;
+  font-size: 0px;
+  outline: 0 !important;
+  z-index: 99;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+button.back-to-top:hover,
+button.back-to-top:active,
+button.back-to-top:focus {
+  outline: 0 !important;
+}
+button.back-to-top::before,
+button.back-to-top::after {
+  content: "";
+  display: block;
+  vertical-align: middle;
+  border-bottom: solid 10px #34495e;
+  border-left: solid 10px transparent;
+  line-height: 0;
+  border-right: solid 10px transparent;
+  height: 0;
+  margin: 18px auto 0;
+  width: 0;
+  border-radius: 20px;
+  visibility: hidden;
+}
+button.back-to-top.show::after,
+button.back-to-top.show::before {
+  visibility: visible;
+}
+button.back-to-top::after {
+  border-bottom-color: #d7e1e9;
+  position: relative;
+  top: -24px;
+}
+button.back-to-top.show {
+  display: block;
+  background: #d7e1e9;
+  color: #00ab6c;
+  font-size: 25px;
+  right: 25px;
+  height: 50px;
+  width: 50px;
+  visibility: visible;
+  box-shadow: 0px 3px 0px 0px rgb(0 0 0 / 25%);
+}
+button.back-to-top.show:active {
+  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
 }
 
 @media screen and (max-width: 731px) {
@@ -3800,46 +3913,5 @@ body {
     font-family: "Cinzel";
     display: flex;
     justify-content: center;
-  }
-}
-
-/* BODY */
-
-a {
-  text-decoration: none !important;
-}
-.navegacion {
-  background-color: #fff;
-}
-
-.galeria {
-  transition: box-shadow 500ms;
-  border-radius: 2px;
-  transition: all 0.3s;
-}
-.galeria:hover {
-  box-shadow: 20px 5px 11px 0px rgb(124 123 140);
-  border-radius: 5px;
-}
-/*Animacion del header*/
-@keyframes float {
-  0% {
-    transform: translatey(0px);
-  }
-  50% {
-    transform: translatey(-15px);
-  }
-  100% {
-    transform: translatey(0px);
-  }
-}
-
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
   }
 }
