@@ -1,49 +1,20 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: url(/imagenes/blanco.jpg);
   background-size: 1000000px;
   background-repeat: no-repeat;
 }
 
-.main {
-  background-size: 100000px;
-}
-
-html {
-  scroll-behavior: smooth;
-}
 .fa-angle-double-down {
   font-weight: lighter;
   font-size: 50px;
   color: darkgrey;
   cursor: pointer;
 }
-.contenido-p {
-  background: url(/imagenes/azul.jpg);
-  background-size: 10000px;
-  background-repeat: no-repeat;
-}
-.contenido-cursos {
-  background: url(/imagenes/azul.jpg);
-  background-size: 100000px;
-  background-repeat: no-repeat;
-}
-.fondo-medio {
-  background: url(/imagenes/azul.jpg);
-  background-size: 10000px;
-}
-.fondo-footer {
-  background: url(/imagenes/blanco.jpg);
-  background-size: cover;
-  background-size: 100000px;
-  background-repeat: no-repeat;
-}
-
 .arrows {
-  position: relative;
-  top: 78px;
-  cursor: pointer;
-  width: 60px;
-  height: auto;
+  width: 58px;
 }
 
 .arrows path {
@@ -51,7 +22,6 @@ html {
   fill: transparent;
   stroke-width: 1px;
   animation: arrow 2s infinite;
-  -webkit-animation: arrow 2s infinite;
 }
 
 .disapear {
@@ -59,8 +29,54 @@ html {
 }
 .scroll-down {
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
+}
+
+.main {
+  background-size: 100000px;
+}
+.contenido-cursos {
+  background: url(/imagenes/pinkback.jpg);
+}
+
+.contenido-p {
+  background: linear-gradient(0deg, rgba(61, 96, 116, 0.26234243697478987) 0%, rgba(61, 96, 116, 1) 100%);
+}
+
+.contenido-cursos {
+  background: linear-gradient(0deg, rgba(61, 96, 116, 1) 0%, rgba(61, 96, 116, 0.26234243697478987) 100%);
+}
+.fondo-medio {
+  height: 850px;
+  background: linear-gradient(
+    94deg,
+    rgba(61, 96, 116, 0.7861519607843137) 13%,
+    rgba(61, 96, 116, 0.3603816526610645) 83%
+  );
+}
+.fondo-footer {
+  background: url(/imagenes/blanco.jpg);
+  background-size: cover;
+  background-size: 100000px;
+  background-repeat: no-repeat;
+}
+.container-padre {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.frases-footer-positivas {
+  font-family: "Cinzel";
+}
+.parrafo-final {
+  margin-top: 5%;
+}
+.frases-footer-positivas p {
+  margin: 0;
 }
 
 @keyframes arrow {
@@ -78,6 +94,29 @@ html {
   }
 }
 
+@media screen and (max-width: 731px) {
+  .tresProyectos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .dosProyectos {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 411px) {
+  .content {
+    min-height: 800px;
+  }
+  .fondo-medio {
+    min-height: 800px;
+  }
+  .contenido-habilidades {
+    height: 70px;
+  }
+}
 @media screen and (max-width: 540px) {
   .navbar-collapse ul {
     list-style-type: none;
@@ -90,9 +129,20 @@ html {
     font-family: "Cinzel";
     font-size: 16px;
   }
-
-  .galeria::before {
-    height: 100%;
+  .arrows {
+    position: relative;
+    top: 50px;
+    cursor: pointer;
+    width: 60px;
+  }
+  .box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: auto;
+  }
+  .content {
+    height: 900px;
   }
   .galeria img {
     border-radius: 10%;
@@ -114,7 +164,6 @@ html {
       transform: translatey(0px);
     }
   }
-  /*.galeria, img:hover { transform: scale(1.2); }*/
 
   @-webkit-keyframes fade-in {
     0% {
@@ -130,14 +179,17 @@ html {
     color: #34495e;
     width: 100%;
     height: 100%;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-family: "Cinzel";
   }
+  .contenido-yo {
+    width: 100%;
+  }
   div.sobreMi h2 {
-    /* font-size: 25px;*/
     color: #383e56;
     overflow: hidden;
     white-space: nowrap;
@@ -187,21 +239,480 @@ html {
     width: max-content;
     overflow: hidden;
     white-space: nowrap;
-
     opacity: 1;
   }
 
+  /*MAIN*/
+  .division {
+    display: flex;
+    align-items: center;
+  }
+
+  .about-me h2 {
+    width: 76%;
+    height: 120px;
+    line-height: 1;
+    font-size: 20px;
+    font-family: "Cinzel";
+    font-variant: small-caps;
+    color: #f8f8f8;
+    text-align: center;
+  }
+
+  .contenido-p {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
   .division img {
+    max-height: 180px;
+    width: 180px;
+    transition: all 0.5s ease-in;
+  }
+
+  .about-me {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .objeto {
+    color: #fdfdfd;
+    font-size: 15px;
+  }
+
+  /*cursos*/
+  .contenido-cursos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 550px;
+  }
+  .card-box {
     width: 200px;
-    height: 200px;
+    height: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: all 0.5s ease-in;
+  }
+  .card-content {
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  .card-content p {
+    font-family: "Cinzel";
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .active .card-content {
+    opacity: 1;
+    z-index: 5;
+  }
+  .d-flex {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: all 0.5s ease-in;
+  }
+
+  img {
+    display: flex;
+    height: auto;
+    margin: 0 auto;
+    width: 200px;
+    opacity: 1;
+  }
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    transition: all 0.3s;
+  }
+  .active .back {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  .active:hover .back {
+    background: rgba(255, 255, 255, 0.5) !important;
+  }
+  .card-box:hover .back {
+    background: transparent;
+  }
+  .header-card {
+    position: relative;
+    display: contents;
+    cursor: pointer;
+  }
+
+  .card-box-digitalers {
+    width: 200px;
+    height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: all 0.5s ease-in;
+    justify-content: center;
+  }
+  .back-digitalers {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    transition: all 0.3s;
+    border-radius: 15px;
+  }
+  .active .back-digitalers {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  .active:hover .back-digitalers {
+    background: rgba(255, 255, 255, 0.5) !important;
+  }
+
+  /*Proyectos*/
+  .tituloP {
+    color: #34495e;
+  }
+  .contenido-color .tituloH::before {
+    border-bottom: 1px solid rgb(236, 236, 236);
+  }
+  .titulo {
+    text-transform: uppercase;
+    font-family: "Newsreader", serif;
+    color: #383e56;
+  }
+  .contenido-proyectos {
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-proyectos {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .about-proyectos h2 {
+    line-height: 1.3;
+    font-size: 1.5em;
+    font-family: "Cinzel";
+    color: rgb(56, 62, 86);
+  }
+  /*CARDS DE PROYECTOS*/
+
+  .card-proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-proyectos .card {
+    overflow: hidden;
+    position: relative;
+    font-family: "Open Sans";
+    width: 200px;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: -2px 12px 14px 3px rgb(0 0 0 / 20%);
+    margin-bottom: 20px;
+  }
+  .tresProyectos {
+    justify-content: center;
+  }
+  .dosProyectos {
+    display: flex;
+    justify-content: center;
+  }
+  .card img {
+    filter: blur(0px);
+    height: 85%;
+    transition: all 1.3s;
+    width: 250px;
+  }
+  .card h2 {
+    color: #333;
+    height: 10%;
+    margin: 0;
+    padding: 5%;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card .description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    padding: 2%;
+    z-index: 1;
+    opacity: 1;
+    font-weight: 300;
+    transition: all 1.3s;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description h3 {
+    color: #fff;
+    font-variant: small-caps;
+  }
+  .card:hover img {
+    filter: blur(8px);
+    transition: all 1.3s;
+  }
+  .card:hover .description {
+    transition: all 1.3s;
+    opacity: 1;
+  }
+
+  .descripcion-de-proyectos {
+    text-align: center;
+    font-family: "Cinzel";
+    font-size: 15px;
+    color: #fff;
+  }
+  /*Card de habilidades*/
+  .fondo-medio {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contenido-colorH {
+    color: #ffffff;
+  }
+  .contenido-habilidades {
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-habilidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .card-habilidades1 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+  .card-habilidades2 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+  .card-habilidades .card-skills {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    font-family: "Newsreader", serif;
+    width: 100%;
+    height: 50px;
+    border-radius: 2px;
+    background-color: #dedede;
+    box-shadow: -5px 5px 5px rgb(61 64 82 / 20%);
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  .card-skills h2 {
+    color: #333;
+    height: 10%;
+    margin: 0;
+    padding: 5%;
+    font-size: 16px;
+  }
+  .card-skills .description-skills {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1.5%;
+    z-index: 1;
+    opacity: 0.1;
+    font-weight: 300;
+    transition: all 1.3s;
+    background-color: rgb(0 0 0 / 50%);
+    border-radius: 2px;
+    color: #010203cc;
+  }
+  .card-skills:hover img {
+    transition: all 1.3s;
+  }
+  .card-skills:hover .description-skills {
+    transition: all 1.3s;
+    color: #0e1f31cc;
+    opacity: 1;
+  }
+  .skills-icon {
+    color: #163758cc;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+  }
+  /*footer*/
+
+  .fondo-footer {
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contenido-final {
+    display: flex;
+    justify-content: center;
+  }
+  .nombre-y-apellido {
+    font-size: 1.5rem;
+    color: #34495e;
+  }
+  .footer-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nombre {
+    font-family: "Cinzel";
+    position: relative;
+    display: inline-block;
+    height: 100px;
+  }
+  .nombre::first-letter {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+  }
+  .apellido {
+    font-family: "Cinzel";
+    position: relative;
+    display: inline-block;
+    height: 100px;
+  }
+
+  .apellido::first-letter {
+    font-size: 2rem;
+    color: #ffffff;
+    /* color: rgb(187, 153, 153);*/
+  }
+
+  /*frases footer*/
+  .frases-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .frases-footer-positivas,
+  p {
+    display: flex;
+    align-items: center;
+    font-family: "Cinzel";
+    font-size: 17px;
+  }
+
+  .frases-footer-positivas {
+    background-color: whitesmoke;
+    border-radius: 5%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    filter: blur(2px);
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  .frases-footer-positivas:hover {
+    background-color: inherit;
+    transform: scale(1.4);
+    color: #313131;
+    filter: blur(0);
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background-color: #fff;
+    transition: 0.4s ease-out;
+  }
+  .overlay:hover {
+    opacity: 0.6;
+  }
+
+  /*ICONS FOOTER*/
+  .icons-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 12px;
+    margin-top: 15px;
+  }
+  .social {
+    transition-duration: 0.5s;
+    color: rgb(170, 170, 170);
+  }
+  #social-em {
+    color: #a1231270;
+  }
+  #social-in {
+    color: #007bff9d;
+  }
+  #social-gp {
+    color: #3f3f44b7;
+  }
+  .create-by {
+    font-family: "Cinzel";
+    display: flex;
+    justify-content: center;
   }
 }
 
 @media screen and (min-width: 541px) and (max-width: 767px) {
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
   .navbar-collapse ul {
     list-style-type: none;
   }
-
+  .navegacion {
+    background: #ffff;
+    z-index: 100;
+    padding: 0.1em;
+    box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 75%);
+  }
   .navbar-collapse .main-nav a {
     text-decoration: none;
     color: #34495e;
@@ -209,7 +720,13 @@ html {
     font-family: "Cinzel";
     font-size: 16px;
   }
-
+  .content {
+    min-height: 920px;
+  }
+  .box-child {
+    display: flex;
+    justify-content: center;
+  }
   .galeria img {
     border-radius: 10%;
     width: 60%;
@@ -225,115 +742,17 @@ html {
     width: 100%;
     height: 100%;
     font-family: "Cinzel";
-  }
-
-  div.sobreMi h2 {
-    display: flex;
-    justify-content: center;
-    font-size: 35px;
-    color: #383e56;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typing 1.5s steps(80, end), blink-caret 0.5s step-end infinite;
-  }
-
-  @keyframes typing {
-    from {
-      width: 0%;
-    }
-    to {
-      width: 100%;
-    }
-  }
-
-  .ocultarMeta {
-    font-size: 35px;
-    text-align: center;
-    opacity: 1;
-  }
-
-  @keyframes typingDos {
-    from {
-      width: 0;
-    }
-    to {
-      width: 70%;
-    }
-  }
-  @keyframes typingTres {
-    from {
-      width: 0;
-    }
-    to {
-      width: 70%;
-    }
-  }
-}
-/*Tablet*/
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-
-  .sticky + .content {
-    padding-top: 60px;
-  }
-  .navegacion {
-    background-color: #fff;
-    z-index: 100;
-    padding: 0.1em;
-    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
-  }
-  .main-nav {
-    list-style-type: none;
-    margin: 14px;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .navegacion .main-nav a {
-    text-decoration: none;
-    padding: 10px 25px;
-    color: #34495e;
-    text-transform: uppercase;
-    font-family: "Cinzel";
-    font-size: 18px;
-  }
-  .main-nav a:hover {
-    color: #718daa;
-  }
-
-  .galeria::before {
-    height: 60%;
-  }
-
-  .galeria img {
-    border-radius: 10%;
-    width: 60%;
-    height: auto;
-    margin: 0 auto;
-    display: flex;
     justify-content: center;
     align-items: center;
-    animation: float 1s ease-in-out infinite;
-  }
-  div.sobreMi {
-    color: #34495e;
-    width: 100%;
-    height: 100%;
-    font-family: "Cinzel";
+    flex-direction: column;
+    display: flex;
   }
   div.sobreMi h2 {
     font-size: 2rem;
     color: #383e56;
-    width: 155px;
+    width: 107px;
     overflow: hidden;
     white-space: nowrap;
-    margin: 0;
     animation: typing 1s steps(15, end), blink-caret 0.5s step-end infinite;
   }
   @keyframes typing {
@@ -341,7 +760,7 @@ html {
       width: 0;
     }
     to {
-      width: 15%;
+      width: 12%;
     }
   }
 
@@ -380,8 +799,598 @@ html {
   }
 
   .mostrarMeta {
-    font-size: 2rem;
+    font-size: 1.5rem;
     width: max-content;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typingDos 2.8s steps(50, end), blink-caret 0.5s step-end infinite;
+    opacity: 1;
+  }
+
+  .mostrarMetaTres {
+    font-size: 1.5rem;
+    width: max-content;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typingTres 2.8s steps(50, end), blink-caret 0.5s step-end infinite;
+    opacity: 1;
+  }
+  /*MAIN*/
+  .contenido-personal {
+    min-height: 800px;
+  }
+  .contenido-p {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .division {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+  }
+  .division img {
+    height: 150px;
+  }
+  .about-me {
+    justify-content: center;
+    display: flex;
+  }
+  .about-me h2 {
+    width: 83%;
+    line-height: 1.3;
+    font-size: 25px;
+    font-family: "Cinzel";
+    color: #f8f8f8;
+    text-align: center;
+  }
+
+  .objeto {
+    color: #fdfdfd;
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  /*cursos*/
+  .contenido-cursos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    min-height: 650px;
+  }
+  .card-box {
+    width: 280px;
+    height: 170px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: all 0.5s ease-in;
+  }
+  .card-content {
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s;
+    height: 100%;
+    display: flex;
+  }
+  .card-content p {
+    font-family: "Cinzel";
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .active .card-content {
+    opacity: 1;
+    z-index: 5;
+  }
+  .d-flex {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    min-height: 150px;
+    transition: all 0.5s ease-in;
+  }
+
+  img {
+    display: flex;
+    height: auto;
+    margin: 0 auto;
+    opacity: 1;
+  }
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    transition: all 0.3s;
+  }
+  .active .back {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  .active:hover .back {
+    background: rgba(255, 255, 255, 0.5) !important;
+  }
+  .card-box:hover .back {
+    background: transparent;
+  }
+  .header-card {
+    position: relative;
+    display: contents;
+    cursor: pointer;
+  }
+
+  .card-box-digitalers {
+    width: 280px;
+    height: 170px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    border-radius: 15px;
+  }
+  .back-digitalers {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+
+    transition: all 0.3s;
+  }
+  .active .back-digitalers {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  .active:hover .back-digitalers {
+    background: rgba(255, 255, 255, 0.5) !important;
+  }
+
+  /*Proyectos*/
+  .tituloP {
+    color: #34495e;
+  }
+  .contenido-color .tituloH::before {
+    border-bottom: 1px solid rgb(236, 236, 236);
+  }
+  .titulo {
+    text-transform: uppercase;
+    font-family: "Newsreader", serif;
+    color: #383e56;
+  }
+  .contenido-proyectos {
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-proyectos {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .about-proyectos h2 {
+    line-height: 1.3;
+    font-size: 1.5em;
+    font-family: "Cinzel";
+    color: rgb(56, 62, 86);
+  }
+  /*CARDS DE PROYECTOS*/
+
+  .card-proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-proyectos .card {
+    overflow: hidden;
+    position: relative;
+    font-family: "Open Sans";
+    width: 200px;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: -2px 12px 14px 3px rgb(0 0 0 / 20%);
+    margin-bottom: 20px;
+  }
+  .tresProyectos {
+    justify-content: space-around;
+  }
+  .dosProyectos {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .card img {
+    filter: blur(0px);
+    height: 85%;
+    transition: all 1.3s;
+    width: 250px;
+  }
+  .card h2 {
+    color: #333;
+    height: 10%;
+    margin: 0;
+    padding: 5%;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card .description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    padding: 2%;
+    z-index: 1;
+    opacity: 1;
+    font-weight: 300;
+    transition: all 1.3s;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description h3 {
+    color: #fff;
+    font-variant: small-caps;
+  }
+  .card:hover img {
+    filter: blur(8px);
+    transition: all 1.3s;
+  }
+  .card:hover .description {
+    transition: all 1.3s;
+    opacity: 1;
+  }
+
+  .descripcion-de-proyectos {
+    text-align: center;
+    font-family: "Cinzel";
+    font-size: 15px;
+    color: #fff;
+  }
+  /*Card de habilidades*/
+  .fondo-medio {
+    height: 850px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .contenido-colorH {
+    color: #ffffff;
+  }
+  .contenido-habilidades {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-habilidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .card-habilidades1 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+  .card-habilidades2 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+  .card-habilidades .card-skills {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    font-family: "Newsreader", serif;
+    width: 100%;
+    height: 50px;
+    border-radius: 2px;
+    background-color: #dedede;
+    box-shadow: -5px 5px 5px rgb(61 64 82 / 20%);
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  .card-skills h2 {
+    color: #333;
+    height: 10%;
+    margin: 0;
+    padding: 5%;
+    font-size: 16px;
+  }
+  .card-skills .description-skills {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1.5%;
+    z-index: 1;
+    opacity: 0.1;
+    font-weight: 300;
+    transition: all 1.3s;
+    background-color: rgb(0 0 0 / 50%);
+    border-radius: 2px;
+    color: #010203cc;
+  }
+  .card-skills:hover img {
+    transition: all 1.3s;
+  }
+  .card-skills:hover .description-skills {
+    transition: all 1.3s;
+    color: #0e1f31cc;
+    opacity: 1;
+  }
+  .skills-icon {
+    color: #163758cc;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+  }
+  /*footer*/
+  .fondo-footer {
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contenido-final {
+    display: flex;
+    justify-content: center;
+  }
+  .nombre-y-apellido {
+    font-size: 40px;
+    color: #34495e;
+  }
+  .footer-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nombre {
+    font-family: "Cinzel";
+    position: relative;
+    display: inline-block;
+    height: 100px;
+  }
+  .nombre::first-letter {
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+  }
+  .apellido {
+    font-family: "Cinzel";
+    position: relative;
+    display: inline-block;
+    height: 100px;
+  }
+
+  .apellido::first-letter {
+    font-size: 60px;
+    color: #ffffff;
+    /* color: rgb(187, 153, 153);*/
+  }
+
+  /*frases footer*/
+  .frases-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .frases-footer-positivas,
+  p {
+    display: flex;
+    align-items: center;
+    font-family: "Cinzel";
+    font-size: 17px;
+  }
+
+  .frases-footer-positivas {
+    background-color: whitesmoke;
+    border-radius: 5%;
+    width: 50%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    filter: blur(2px);
+    cursor: pointer;
+    margin-top: 50px;
+  }
+  .frases-footer-positivas:hover {
+    background-color: inherit;
+    transform: scale(1.4);
+    color: #313131;
+    filter: blur(0);
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background-color: #fff;
+    transition: 0.4s ease-out;
+  }
+  .overlay:hover {
+    opacity: 0.6;
+  }
+
+  /*ICONS FOOTER*/
+  .icons-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 12px;
+    margin-top: 15px;
+  }
+  .social {
+    transition-duration: 0.5s;
+    color: rgb(170, 170, 170);
+  }
+  #social-em {
+    color: #a1231270;
+  }
+  #social-in {
+    color: #007bff9d;
+  }
+  #social-gp {
+    color: #3f3f44b7;
+  }
+  .create-by {
+    font-family: "Cinzel";
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .navegacion {
+    background-color: #fff;
+    z-index: 100;
+    padding: 0.1em;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  }
+  .main-nav {
+    list-style-type: none;
+    margin: 14px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navegacion .main-nav a {
+    text-decoration: none;
+    padding: 10px 25px;
+    color: #34495e;
+    text-transform: uppercase;
+    font-family: "Cinzel";
+    font-size: 18px;
+  }
+  .main-nav a:hover {
+    color: #718daa;
+  }
+  .content {
+    min-height: 845px;
+  }
+
+  .galeria::before {
+    height: 60%;
+  }
+
+  .galeria img {
+    border-radius: 10%;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: float 1s ease-in-out infinite;
+  }
+  .contenido-yo {
+    width: 100%;
+  }
+  div.sobreMi {
+    color: #34495e;
+    width: 100%;
+    height: 100%;
+    font-family: "Cinzel";
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+  }
+  div.sobreMi h2 {
+    font-size: 2rem;
+    color: #383e56;
+    width: 107px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 1s steps(15, end), blink-caret 0.5s step-end infinite;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 12%;
+    }
+  }
+
+  @keyframes typingDos {
+    from {
+      width: 0;
+    }
+    to {
+      width: 85%;
+    }
+  }
+  @keyframes typingTres {
+    from {
+      width: 0;
+    }
+    to {
+      width: 63%;
+    }
+  }
+
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    15% {
+      border-color: rgb(61, 61, 61);
+    }
+  }
+
+  .linea {
+    border-right: 0.1em solid rgb(51, 50, 50);
+  }
+  .ocultarMeta {
+    opacity: 0;
+  }
+
+  .mostrarMeta {
+    font-size: 2rem;
+    width: 642px;
     overflow: hidden;
     white-space: nowrap;
     margin-top: 20px;
@@ -397,22 +1406,500 @@ html {
     animation: typingTres 3.8s steps(50, end), blink-caret 0.5s step-end infinite;
     opacity: 1;
   }
+
+  /*main*/
+  .division {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .division img {
+    height: 300px;
+    width: 300px;
+    transition: all 0.5s ease-in;
+  }
+  .contenido-p {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .objeto {
+    color: #fdfdfd;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .about-me {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+
+  .about-me h2 {
+    width: 83%;
+    font-size: 45px;
+    line-height: 1.2;
+    font-family: "Cinzel";
+    font-variant: small-caps;
+    color: #f8f8f8;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+  /*Contenido cursos*/
+  .contenido-cursos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .card-box {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: all 0.5s ease-in;
+  }
+  .card-content {
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-content p {
+    font-family: "Cinzel";
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .active .card-content {
+    opacity: 1;
+    z-index: 5;
+  }
+  .d-flex {
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+    transition: all 0.5s ease-in;
+  }
+
+  img {
+    display: flex;
+    opacity: 1;
+  }
+  img > .digitalers {
+    width: 100%;
+  }
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    transition: all 0.3s;
+  }
+  .active .back {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  .active:hover .back {
+    background: rgba(255, 255, 255, 0.5) !important;
+  }
+  .card-box:hover .back {
+    background: transparent;
+  }
+  .header-card {
+    position: relative;
+    display: contents;
+    cursor: pointer;
+  }
+
+  .card-box-digitalers {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+  .back-digitalers {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    transition: all 0.3s;
+    border-radius: 15px;
+  }
+  .active .back-digitalers {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  .active:hover .back-digitalers {
+    background: rgba(255, 255, 255, 0.5) !important;
+  }
+  /*PROYECTOS*/
+
+  .tituloP {
+    color: #34495e;
+  }
+  .contenido-color .tituloH::before {
+    border-bottom: 1px solid rgb(236, 236, 236);
+  }
+  .titulo {
+    text-transform: uppercase;
+    font-family: "Newsreader", serif;
+    color: #383e56;
+  }
+  .contenido-color::before {
+    content: "";
+    border-bottom: 1px solid black;
+    padding: 0 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    transition: 0.3s;
+  }
+  .contenido-color:hover:before {
+    width: 100%;
+    padding: 0;
+  }
+  .contenido-proyectos {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-proyectos {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .about-proyectos h2 {
+    line-height: 1.3;
+    font-size: 2.5em;
+    font-family: "Cinzel";
+    color: rgb(56, 62, 86);
+  }
+  /*card de proyectos*/
+  .card-proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .tresProyectos {
+    justify-content: space-around;
+  }
+  .dosProyectos {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .card-proyectos .card {
+    overflow: hidden;
+    position: relative;
+    font-family: "Open Sans";
+    width: 300px;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: -2px 12px 14px 3px rgb(0 0 0 / 20%);
+    margin-bottom: 20px;
+  }
+  .card img {
+    filter: blur(0px);
+    height: 85%;
+    transition: all 1.3s;
+    width: 300px;
+  }
+  .card h2 {
+    color: #333;
+    height: 10%;
+    margin: 0;
+    padding: 5%;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card .description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    padding: 2%;
+    z-index: 1;
+    opacity: 1;
+    font-weight: 300;
+    transition: all 1.3s;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+  .description h3 {
+    color: #fff;
+    font-variant: small-caps;
+  }
+
+  .descripcion-de-proyectos {
+    text-align: center;
+    font-family: "Cinzel";
+    font-size: 15px;
+    color: #fff;
+  }
+  /*HABILIDADES*/
+  .contenido-colorH {
+    color: #ffffff;
+  }
+  .tituloH {
+    text-transform: uppercase;
+    font-family: "Newsreader", serif;
+  }
+  .contenido-colorH::before {
+    content: "";
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 0 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    transition: 0.3s;
+  }
+  .contenido-colorH:hover:before {
+    width: 100%;
+    padding: 0;
+  }
+  .contenido-habilidades {
+    height: 100px;
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-habilidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 800px;
+  }
+  .card-habilidades1 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+  .card-habilidades2 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+  .card-habilidades .card-skills {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    font-family: "Newsreader", serif;
+    width: 100%;
+    height: 50px;
+    border-radius: 2px;
+    background-color: #dedede;
+    box-shadow: -5px 5px 5px rgb(61 64 82 / 20%);
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  .card-skills h2 {
+    color: #333;
+    height: 10%;
+    margin: 0;
+    padding: 5%;
+    font-size: 16px;
+  }
+  .card-skills .description-skills {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1.5%;
+    z-index: 1;
+    opacity: 0.1;
+    font-weight: 300;
+    transition: all 1.3s;
+    background-color: rgb(0 0 0 / 50%);
+    border-radius: 2px;
+    color: #010203cc;
+  }
+  .card-skills:hover img {
+    transition: all 1.3s;
+  }
+  .card-skills:hover .description-skills {
+    transition: all 1.3s;
+    color: #0e1f31cc;
+    opacity: 1;
+  }
+  .skills-icon {
+    color: #163758cc;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+  }
+  /*FOOTER*/
+  .fondo-footer {
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contenido-final {
+    display: flex;
+    justify-content: center;
+  }
+  .nombre-y-apellido {
+    font-size: 40px;
+    color: #34495e;
+  }
+  .footer-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nombre {
+    font-family: "Cinzel";
+    position: relative;
+    display: inline-block;
+    height: 100px;
+  }
+  .nombre::first-letter {
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+  }
+  .apellido {
+    font-family: "Cinzel";
+    position: relative;
+    display: inline-block;
+    height: 100px;
+  }
+
+  .apellido::first-letter {
+    font-size: 60px;
+    color: #ffffff;
+  }
+  /*frases footer*/
+
+  .frases-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .frases-footer-positivas,
+  p {
+    display: flex;
+    align-items: center;
+    font-family: "Cinzel";
+    font-size: 17px;
+  }
+
+  .frases-footer-positivas {
+    background-color: whitesmoke;
+    border-radius: 5%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    filter: blur(2px);
+    cursor: pointer;
+    margin-top: 25px;
+    height: 35px;
+  }
+  .frases-footer-positivas:hover {
+    background-color: inherit;
+    transform: scale(1.4);
+    color: #313131;
+    filter: blur(0);
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background-color: #fff;
+    transition: 0.4s ease-out;
+  }
+  .overlay:hover {
+    opacity: 0.6;
+  }
+  /*ICONS FOOTER*/
+  .icons-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 12px;
+    margin-top: 15px;
+  }
+  .social {
+    transition-duration: 0.5s;
+    color: rgb(170, 170, 170);
+  }
+  #social-em {
+    color: #a1231270;
+  }
+  #social-in {
+    color: #007bff9d;
+  }
+  #social-gp {
+    color: #3f3f44b7;
+  }
+  .create-by {
+    font-family: "Cinzel";
+    display: flex;
+    justify-content: center;
+  }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1197px) {
+@media screen and (min-width: 992px) and (max-width: 1024px) {
   .sticky {
     position: fixed;
     top: 0;
     width: 100%;
   }
 
-  .sticky + .content {
-    padding-top: 60px;
+  .content {
+    min-height: 800px;
+    padding: 60px;
   }
+
   .navegacion {
     z-index: 100;
     padding: 0.1em;
-    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
   }
   .main-nav {
     list-style-type: none;
@@ -455,402 +1942,224 @@ html {
       transform: translatey(0px);
     }
   }
-  .content {
-    display: grid;
-    place-items: center;
-  }
 
-  div.sobreMi {
-    color: #34495e;
-    width: 100%;
-    height: auto;
-    /* display: grid;
-    place-items: center;*/
-    font-family: "Cinzel";
-    letter-spacing: 0.5rem;
-  }
-  div.sobreMi h2 {
-    color: #383e56;
-    width: 155px;
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    bottom: 20px;
-    right: 20px;
-    animation: typing 1s steps(15, end), blink-caret 0.5s step-end infinite;
-  }
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 15%;
-    }
-  }
-
-  @keyframes typingDos {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-  @keyframes typingTres {
-    from {
-      width: 0;
-    }
-    to {
-      width: 70%;
-    }
-  }
-
-  @keyframes blink-caret {
-    from,
-    to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: rgb(61, 61, 61);
-    }
-  }
-
-  .linea {
-    border-right: 0.1em solid rgb(51, 50, 50);
-  }
-  .ocultarMeta {
-    opacity: 0;
-  }
-
-  .mostrarMeta {
-    font-size: 2rem;
-    width: max-content;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typingDos 3.8s steps(50, end), blink-caret 0.5s step-end infinite;
-    opacity: 1;
-  }
-
-  .mostrarMetaTres {
-    font-size: 2rem;
-    width: max-content;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typingTres 3.8s steps(50, end), blink-caret 0.5s step-end infinite;
-    opacity: 1;
-  }
-}
-
-.division {
-  width: 50%;
-}
-
-.division img {
-  height: 500px;
-  width: 500px;
-  opacity: 0;
-  transition: all 0.5s ease-in;
-}
-
-.division img.animate {
-  opacity: 1;
-  transition: all 0.5s ease-in;
-}
-
-@media screen and (min-width: 1198px) and (max-width: 1999px) {
-  .sticky + .content {
-    padding-top: 60px;
-  }
-  .navegacion {
-    z-index: 100;
-    padding: 0.1em;
-    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
-  }
-  .main-nav {
-    list-style-type: none;
-    margin: 14px;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .navegacion .main-nav a {
-    text-decoration: none;
-    padding: 10px 25px;
-    color: #34495e;
-    text-transform: uppercase;
-    font-family: "Cinzel";
-    font-size: 15px;
-  }
-  .main-nav a:hover {
-    color: #718daa;
-  }
-
-  .galeria img {
-    border-radius: 10%;
-    width: 80%;
-    height: auto;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    animation: float 1s ease-in-out infinite;
-  }
-
-  div.sobreMi {
-    color: #34495e;
-    width: 100%;
-    height: auto;
-    font-family: "Cinzel";
-    letter-spacing: 0.5rem;
-  }
-  div.sobreMi h2 {
-    color: #383e56;
-    width: 155px;
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    bottom: 20px;
-    right: 20px;
-    animation: typing 1s steps(15, end), blink-caret 0.5s step-end infinite;
-  }
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 15%;
-    }
-  }
-
-  @keyframes typingDos {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-  @keyframes typingTres {
-    from {
-      width: 0;
-    }
-    to {
-      width: 70%;
-    }
-  }
-
-  @keyframes blink-caret {
-    from,
-    to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: rgb(61, 61, 61);
-    }
-  }
-
-  .linea {
-    border-right: 0.1em solid rgb(51, 50, 50);
-  }
-  .ocultarMeta {
-    opacity: 0;
-  }
-
-  .mostrarMeta {
-    font-size: 2rem;
-    width: max-content;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typingDos 3.8s steps(50, end), blink-caret 0.5s step-end infinite;
-    opacity: 1;
-  }
-
-  .mostrarMetaTres {
-    font-size: 2rem;
-    width: max-content;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typingTres 3.8s steps(50, end), blink-caret 0.5s step-end infinite;
-    opacity: 1;
-  }
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1399px) {
-  .galeria img {
-    border-radius: 10%;
-    width: 80%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    animation: float 1s ease-in-out infinite;
-  }
-
-  div.sobreMi h2 {
-    color: #383e56;
-    width: 155px;
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    bottom: 20px;
-    right: 20px;
-    animation: typing 1s steps(15, end), blink-caret 0.5s step-end infinite;
-  }
-  .mostrarMeta {
-    font-size: 2vw;
-    width: max-content;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typingDos 3.8s steps(50, end), blink-caret 0.5s step-end infinite;
-    opacity: 1;
-  }
-
-  .mostrarMetaTres {
-    font-size: 2vw;
-    width: max-content;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typingTres 3.8s steps(50, end), blink-caret 0.5s step-end infinite;
-    opacity: 1;
-  }
-  @keyframes typingDos {
-    from {
-      width: 0;
-    }
-    to {
-      width: 90%;
-    }
-  }
-  @keyframes typingTres {
-    from {
-      width: 0;
-    }
-    to {
-      width: 70%;
-    }
-  }
-  .content {
-    margin-top: 50px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-
-  .sticky + .content {
-    padding-top: 90px;
-  }
-  .content {
-    padding-bottom: 350px;
-  }
-  .galeria img {
-    border-radius: 10%;
-    margin-top: -150px;
-    width: 80%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    animation: float 1s ease-in-out infinite;
-  }
-  div.sobreMi {
-    border-radius: 10px;
-  }
-  div.sobreMi h2 {
-    color: #383e56;
-    width: 155px;
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    bottom: 20px;
-    right: 20px;
-    animation: typing 1s steps(15, end), blink-caret 0.5s step-end infinite;
-  }
-  .mostrarMeta {
-    font-size: 2vw;
-    width: max-content;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typingDos 3.8s steps(50, end), blink-caret 0.5s step-end infinite;
-    opacity: 1;
-  }
-
-  .mostrarMetaTres {
-    font-size: 2vw;
-    width: max-content;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typingTres 3.8s steps(50, end), blink-caret 0.5s step-end infinite;
-    opacity: 1;
-  }
-  @keyframes typingDos {
-    from {
-      width: 0;
-    }
-    to {
-      width: 90%;
-    }
-  }
-  @keyframes typingTres {
-    from {
-      width: 0;
-    }
-    to {
-      width: 65%;
-    }
-  }
   .contenido-yo {
-    border-radius: 5px;
-    margin-top: 50px;
+    width: 100%;
   }
-
-  /*MAIN*/
-
-  .division {
-    width: 40%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .about-me h2 {
-    line-height: 1.3;
-    font-size: 2.6em;
+  div.sobreMi {
+    color: #34495e;
+    width: 100%;
+    height: auto;
     font-family: "Cinzel";
-    width: 70%;
-    color: #f8f8f8;
-  }
-
-  .about-me {
+    letter-spacing: 0.2rem;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     display: flex;
   }
+  div.sobreMi h2 {
+    color: #383e56;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 1s steps(15, end), blink-caret 0.5s step-end infinite;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 15%;
+    }
+  }
 
-  .contenido-p {
+  @keyframes typingDos {
+    from {
+      width: 0;
+    }
+    to {
+      width: 88%;
+    }
+  }
+  @keyframes typingTres {
+    from {
+      width: 0;
+    }
+    to {
+      width: 67%;
+    }
+  }
+
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: rgb(61, 61, 61);
+    }
+  }
+
+  .linea {
+    border-right: 0.1em solid rgb(51, 50, 50);
+  }
+  .ocultarMeta {
+    opacity: 0;
+  }
+
+  .mostrarMeta {
+    font-size: 2rem;
+    width: max-content;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typingDos 3.8s steps(50, end), blink-caret 0.5s step-end infinite;
+    opacity: 1;
+  }
+
+  .mostrarMetaTres {
+    font-size: 2rem;
+    width: max-content;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typingTres 3.8s steps(50, end), blink-caret 0.5s step-end infinite;
+    opacity: 1;
+  }
+  /*main*/
+  .division {
     display: flex;
-    justify-content: space-around;
     width: 100%;
+    justify-content: center;
+  }
+  .division img {
+    height: 400px;
+    width: 400px;
+    transition: all 0.5s ease-in;
+  }
+  .contenido-p {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
   }
   .objeto {
-    color: #fdfdfd;
-    font-size: 2em;
+    display: flex;
+    justify-content: flex-start;
   }
-  .contenido-puntos {
-    color: #ffffff;
+  .about-me {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+  .about-me h2 {
+    width: 81%;
+    font-size: 45px;
+    line-height: 1.3;
+    font-family: "Cinzel";
+    color: #f8f8f8;
+    margin-bottom: 100px;
+    text-align: center;
   }
 
-  .contenido-color {
-    background: transparent;
-    border: none;
-    outline: none;
+  /*Contenido cursos*/
+  .contenido-cursos {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    min-height: 400px;
+  }
+  .card-box {
+    width: 400px;
+    height: 300px;
     position: relative;
-    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: all 0.5s ease-in;
+  }
+  .card-content {
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-content p {
+    font-family: "Cinzel";
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .active .card-content {
+    opacity: 1;
+    z-index: 5;
+  }
+  .d-flex {
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    transition: all 0.5s ease-in;
+  }
+
+  img {
+    display: flex;
+    opacity: 1;
+  }
+  img > .digitalers {
+    width: 100%;
+  }
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    transition: all 0.3s;
+  }
+  .active .back {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  .active:hover .back {
+    background: rgba(255, 255, 255, 0.5) !important;
+  }
+  .card-box:hover .back {
+    background: transparent;
+  }
+  .header-card {
+    position: relative;
+    display: contents;
     cursor: pointer;
   }
+
+  .card-box-digitalers {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+  .back-digitalers {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    transition: all 0.3s;
+    border-radius: 15px;
+  }
+  .active .back-digitalers {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  .active:hover .back-digitalers {
+    background: rgba(255, 255, 255, 0.5) !important;
+  }
+  /*PROYECTOS */
   .tituloP {
     color: #34495e;
   }
@@ -878,22 +2187,124 @@ html {
     width: 100%;
     padding: 0;
   }
-  /*TIULO DE HABILIDADES*/
-  .contenido-colorH {
-    color: #ffffff;
-    background: transparent;
-    border: none;
-    outline: none;
-    position: relative;
-    transition: 0.3s;
-    cursor: pointer;
+  .contenido-proyectos {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .contenido-colorH .tituloH::before {
+
+  .about-proyectos {
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .about-proyectos h2 {
+    line-height: 1.3;
+    font-size: 2.5em;
+    font-family: "Cinzel";
+    width: 60%;
+    color: rgb(56, 62, 86);
+  }
+  .imagen-proyecto img {
+    width: 600px;
+  }
+  .imagen-proyecto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*CARDS DE PROYECTOS*/
+  .card-proyectos {
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  .tresProyectos {
+    display: flex;
+    justify-content: space-around;
+  }
+  .dosProyectos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+
+  .card-proyectos .card {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    font-family: "Open Sans";
+    width: 300px;
+    height: 400px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: -2px 12px 14px 3px rgb(0 0 0 / 20%);
+  }
+  .card img {
+    filter: blur(0px);
+    height: 85%;
+    transition: all 1.3s;
+  }
+  .card h2 {
+    color: #333;
+    height: 10%;
+    margin: 0;
+    padding: 5%;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card .description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    padding: 2%;
+    z-index: 1;
+    opacity: 0;
+    font-weight: 300;
+    transition: all 1.3s;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description h3 {
+    color: #fff;
+    font-variant: small-caps;
+  }
+  .card:hover img {
+    filter: blur(8px);
+    transition: all 1.3s;
+  }
+  .card:hover .description {
+    transition: all 1.3s;
+    opacity: 1;
+  }
+
+  .descripcion-de-proyectos {
+    text-align: center;
+    font-family: "Cinzel";
+    font-size: 15px;
+    color: #fff;
+  }
+  /*CARDS HABILIDADES*/
+  .contenido-color .tituloH::before {
     border-bottom: 1px solid rgb(236, 236, 236);
   }
   .tituloH {
     text-transform: uppercase;
     font-family: "Newsreader", serif;
+    color: #ffffff;
   }
   .contenido-colorH::before {
     content: "";
@@ -911,7 +2322,368 @@ html {
     width: 100%;
     padding: 0;
   }
-  /*CURSOS*/
+  .contenido-habilidades {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-habilidades {
+    display: grid;
+    width: 100%;
+  }
+
+  .card-habilidades .card-skills {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    font-family: "Newsreader", serif;
+    width: 450px;
+    height: 50px;
+    border-radius: 2px;
+    background-color: #dedede;
+    box-shadow: -5px 5px 5px rgb(61 64 82 / 20%);
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  .card-skills img {
+    filter: blur(0px);
+    height: 85%;
+    transition: all 1.3s;
+  }
+  .card-skills h2 {
+    color: #333;
+    height: 10%;
+    margin: 0;
+    padding: 5%;
+    font-size: 16px;
+  }
+  .card-skills .description-skills {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1.5%;
+    z-index: 1;
+    opacity: 0.1;
+    font-weight: 300;
+    transition: all 1.3s;
+    background-color: rgb(0 0 0 / 50%);
+    border-radius: 2px;
+    color: #010203cc;
+  }
+  .card-skills:hover img {
+    transition: all 1.3s;
+  }
+  .card-skills:hover .description-skills {
+    transition: all 1.3s;
+    color: #0e1f31cc;
+    opacity: 1;
+  }
+  .skills-icon {
+    color: #163758cc;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+  }
+  /*footer*/
+
+  .contenido-final {
+    display: flex;
+    justify-content: center;
+  }
+  .nombre-y-apellido {
+    letter-spacing: 1rem;
+    font-size: 2rem;
+    color: #34495e;
+  }
+  .footer-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nombre {
+    font-family: "Cinzel";
+    position: relative;
+    display: inline-block;
+    height: 100px;
+  }
+  .nombre::first-letter {
+    font-size: 5rem;
+    color: rgb(255, 255, 255);
+  }
+  .apellido {
+    font-family: "Cinzel";
+    position: relative;
+    display: inline-block;
+    height: 100px;
+  }
+
+  .apellido::first-letter {
+    font-size: 5rem;
+    color: #ffffff;
+  }
+  /*frases footer*/
+  .frases-footer {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .frases-footer-positivas {
+    background-color: whitesmoke;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    width: 15%;
+    height: 40px;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    filter: blur(2px);
+    -webkit-fliter: blur(2px);
+    cursor: pointer;
+  }
+
+  .frases-footer-positivas:hover {
+    background-color: inherit;
+    transform: scale(1.4);
+    color: #313131;
+    filter: blur(0);
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background-color: #fff;
+    transition: 0.4s ease-out;
+  }
+  .overlay:hover {
+    opacity: 0.6;
+  }
+  /*icons footer*/
+  .icons-footer {
+    display: flex;
+    justify-content: center;
+  }
+  .social:hover {
+    transform: scale(1.1);
+  }
+
+  .social {
+    transform: scale(0.8);
+    transition-duration: 0.5s;
+    color: rgb(170, 170, 170);
+    font-size: 50px;
+  }
+  /*
+        Colores Hover
+    */
+
+  #social-gp:hover {
+    color: #3f3f44b4;
+  }
+
+  #social-em:hover {
+    color: #a12312b2;
+  }
+
+  #social-in:hover {
+    color: #0a66c2a9;
+  }
+  .create-by {
+    font-family: "Cinzel";
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.division img {
+  /*height: 500px;
+  width: 500px;
+  opacity: 0;*/
+  transition: all 0.5s ease-in;
+}
+
+.division img.animate {
+  opacity: 1;
+  transition: all 0.5s ease-in;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .content {
+    padding-top: 60px;
+  }
+  .navegacion {
+    z-index: 100;
+    padding: 0.1em;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  }
+  .main-nav {
+    list-style-type: none;
+    margin: 14px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navegacion .main-nav a {
+    text-decoration: none;
+    padding: 10px 25px;
+    color: #34495e;
+    text-transform: uppercase;
+    font-family: "Cinzel";
+    font-size: 15px;
+  }
+  .main-nav a:hover {
+    color: #718daa;
+  }
+  .box-child {
+    display: flex;
+    justify-content: center;
+  }
+  .galeria img {
+    width: 500px;
+    animation: float 1s ease-in-out infinite;
+  }
+  .contenido-yo {
+    width: 100%;
+  }
+
+  div.sobreMi {
+    color: #34495e;
+    width: 100%;
+    height: auto;
+    font-family: "Cinzel";
+    letter-spacing: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+  }
+  div.sobreMi h2 {
+    width: 155px;
+    color: #383e56;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 1s steps(15, end), blink-caret 0.5s step-end infinite;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 15%;
+    }
+  }
+
+  @keyframes typingDos {
+    from {
+      width: 0;
+    }
+    to {
+      width: 85%;
+    }
+  }
+  @keyframes typingTres {
+    from {
+      width: 0;
+    }
+    to {
+      width: 63%;
+    }
+  }
+
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: rgb(61, 61, 61);
+    }
+  }
+
+  .linea {
+    border-right: 0.1em solid rgb(51, 50, 50);
+  }
+  .ocultarMeta {
+    opacity: 0;
+  }
+
+  .mostrarMeta {
+    font-size: 2rem;
+    width: max-content;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typingDos 3.8s steps(50, end), blink-caret 0.5s step-end infinite;
+    opacity: 1;
+  }
+
+  .mostrarMetaTres {
+    font-size: 2rem;
+    width: max-content;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typingTres 3.8s steps(50, end), blink-caret 0.5s step-end infinite;
+    opacity: 1;
+  }
+  /*main*/
+  .division {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .division img {
+    height: 400px;
+    width: 400px;
+    transition: all 0.5s ease-in;
+  }
+  .contenido-p {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .objeto {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .about-me {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+
+  .about-me h2 {
+    width: 81%;
+    font-size: 45px;
+    line-height: 1.3;
+    font-family: "Cinzel";
+    color: #f8f8f8;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+  /*Contenido cursos*/
   .contenido-cursos {
     display: flex;
     justify-content: space-around;
@@ -1026,9 +2798,37 @@ html {
   .card-box-digitalers:hover .back-digitalers {
     background: transparent;
   }
+
   /*PROYECTOS */
+  .tituloP {
+    color: #34495e;
+  }
+  .contenido-color .tituloH::before {
+    border-bottom: 1px solid rgb(236, 236, 236);
+  }
+  .titulo {
+    text-transform: uppercase;
+    font-family: "Newsreader", serif;
+    color: #383e56;
+  }
+  .contenido-color::before {
+    content: "";
+    border-bottom: 1px solid black;
+    padding: 0 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    transition: 0.3s;
+  }
+  .contenido-color:hover:before {
+    width: 100%;
+    padding: 0;
+  }
   .contenido-proyectos {
-    margin: 100px;
+    margin-top: 100px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1037,7 +2837,6 @@ html {
 
   .about-proyectos {
     border-radius: 10px;
-    /*width: 90%;*/
     display: flex;
     justify-content: flex-start;
   }
@@ -1060,11 +2859,18 @@ html {
   }
   /*CARDS DE PROYECTOS*/
   .card-proyectos {
-    display: flex;
     justify-content: center;
-    column-gap: 2rem;
-    margin-bottom: 100px;
     margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  .tresProyectos {
+    display: flex;
+    justify-content: space-around;
+  }
+  .dosProyectos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
   }
 
   .card-proyectos .card {
@@ -1076,7 +2882,7 @@ html {
     height: 400px;
     border-radius: 8px;
     background-color: #fff;
-    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: -2px 12px 14px 3px rgb(0 0 0 / 20%);
   }
   .card img {
     filter: blur(0px);
@@ -1131,22 +2937,691 @@ html {
     font-size: 15px;
     color: #fff;
   }
-
   /*CARDS HABILIDADES*/
-
+  .contenido-color .tituloH::before {
+    border-bottom: 1px solid rgb(236, 236, 236);
+  }
+  .tituloH {
+    text-transform: uppercase;
+    font-family: "Newsreader", serif;
+    color: #ffffff;
+  }
+  .contenido-colorH::before {
+    content: "";
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 0 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    transition: 0.3s;
+  }
+  .contenido-colorH:hover:before {
+    width: 100%;
+    padding: 0;
+  }
+  .fondo-medio {
+    height: 800px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
   .contenido-habilidades {
-    margin: 100px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .card-habilidades {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-around;
     width: 100%;
-    min-height: 500px;
+  }
+
+  .card-habilidades .card-skills {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    font-family: "Newsreader", serif;
+    width: 450px;
+    height: 50px;
+    border-radius: 2px;
+    background-color: #dedede;
+    box-shadow: -5px 5px 5px rgb(61 64 82 / 20%);
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  .card-skills img {
+    filter: blur(0px);
+    height: 85%;
+    transition: all 1.3s;
+  }
+  .card-skills h2 {
+    color: #333;
+    height: 10%;
+    margin: 0;
+    padding: 5%;
+    font-size: 16px;
+  }
+  .card-skills .description-skills {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1.5%;
+    z-index: 1;
+    opacity: 0.1;
+    font-weight: 300;
+    transition: all 1.3s;
+    background-color: rgb(0 0 0 / 50%);
+    border-radius: 2px;
+    color: #010203cc;
+  }
+  .card-skills:hover img {
+    transition: all 1.3s;
+  }
+  .card-skills:hover .description-skills {
+    transition: all 1.3s;
+    color: #0e1f31cc;
+    opacity: 1;
+  }
+  .skills-icon {
+    color: #163758cc;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+  }
+  /*footer*/
+  .fondo-footer {
+    height: 850px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .contenido-final {
+    display: flex;
+    justify-content: center;
+  }
+  .nombre-y-apellido {
+    letter-spacing: 1rem;
+    font-size: 2rem;
+    color: #34495e;
+  }
+  .footer-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nombre {
+    font-family: "Cinzel";
+    position: relative;
+    display: inline-block;
+    height: 100px;
+  }
+  .nombre::first-letter {
+    font-size: 5rem;
+    color: rgb(255, 255, 255);
+  }
+  .apellido {
+    font-family: "Cinzel";
+    position: relative;
+    display: inline-block;
+    height: 100px;
+  }
+
+  .apellido::first-letter {
+    font-size: 5rem;
+    color: #ffffff;
+  }
+  /*frases footer*/
+  .frases-footer {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .frases-footer-positivas {
+    background-color: whitesmoke;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    width: 15%;
+    height: 40px;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    filter: blur(2px);
+    -webkit-fliter: blur(2px);
+    cursor: pointer;
+  }
+
+  .frases-footer-positivas:hover {
+    background-color: inherit;
+    transform: scale(1.4);
+    color: #313131;
+    filter: blur(0);
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background-color: #fff;
+    transition: 0.4s ease-out;
+  }
+  .overlay:hover {
+    opacity: 0.6;
+  }
+  /*icons footer*/
+  .icons-footer {
+    display: flex;
+    justify-content: center;
+  }
+  .social:hover {
+    transform: scale(1.1);
+  }
+
+  .social {
+    transform: scale(0.8);
+    transition-duration: 0.5s;
+    color: rgb(170, 170, 170);
+    font-size: 50px;
+  }
+  /*
+          Colores Hover
+      */
+
+  #social-gp:hover {
+    color: #3f3f44b4;
+  }
+
+  #social-em:hover {
+    color: #a12312b2;
+  }
+
+  #social-in:hover {
+    color: #0a66c2a9;
+  }
+  .create-by {
+    font-family: "Cinzel";
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .content {
+    min-height: 886px;
+    padding: 58px;
+  }
+  .navegacion {
+    z-index: 100;
+    padding: 0.1em;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  }
+  .main-nav {
+    list-style-type: none;
+    margin: 14px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navegacion .main-nav a {
+    text-decoration: none;
+    padding: 10px 25px;
+    color: #34495e;
+    text-transform: uppercase;
+    font-family: "Cinzel";
+    font-size: 15px;
+  }
+  .main-nav a:hover {
+    color: #718daa;
+  }
+  .box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box-child {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .galeria img {
+    border-radius: 10%;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    animation: float 1s ease-in-out infinite;
+  }
+
+  div.sobreMi {
+    color: #34495e;
+    width: 100%;
+    height: auto;
+    font-family: "Cinzel";
+    letter-spacing: 0.2rem;
+  }
+  div.sobreMi h2 {
+    color: #383e56;
+    width: 21%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 1s steps(15, end), blink-caret 0.75s step-end infinite;
+  }
+  @keyframes typing {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 30%;
+    }
+  }
+
+  @keyframes typingDos {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes typingTres {
+    from {
+      width: 0;
+    }
+    to {
+      width: 75%;
+    }
+  }
+
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: rgb(61, 61, 61);
+    }
+  }
+
+  .linea {
+    border-right: 0.1em solid rgb(51, 50, 50);
+  }
+  .ocultarMeta {
+    opacity: 0;
+  }
+
+  .mostrarMeta {
+    font-size: 2rem;
+    width: max-content;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typingDos 3.8s steps(50, end), blink-caret 0.5s step-end infinite;
+    opacity: 1;
+  }
+
+  .mostrarMetaTres {
+    font-size: 2rem;
+    width: 75%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typingTres 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    opacity: 1;
+  }
+  /*main*/
+  .division {
+    width: 48%;
+  }
+  .division img {
+    height: 500px;
+    transition: all 0.5s ease-in;
+  }
+  .contenido-p {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about-me {
+    width: 53%;
+    justify-content: center;
+    display: flex;
+  }
+
+  .about-me h2 {
+    font-size: 45px;
+    line-height: 1.3;
+    font-family: "Cinzel";
+    color: #f8f8f8;
     margin-bottom: 100px;
+    text-align: center;
+  }
+
+  /*Contenido cursos*/
+  .contenido-cursos {
+    display: flex;
+    justify-content: space-around;
+  }
+  .card-box {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: all 0.5s ease-in;
+  }
+  .card-content {
+    position: absolute;
+    bottom: 20%;
+    padding: 15px;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  .card-content p {
+    font-family: "Cinzel";
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .active .card-content {
+    bottom: 50%;
+    opacity: 1;
+    z-index: 5;
+  }
+  .d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    transition: all 0.5s ease-in;
+  }
+
+  img {
+    display: flex;
+    height: auto;
+    margin: 0 auto;
+  }
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    transition: all 0.3s;
+  }
+  .active .back {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  .active:hover .back {
+    background: rgba(255, 255, 255, 0.5) !important;
+  }
+  .card-box:hover .back {
+    background: transparent;
+  }
+  .header-card {
+    position: relative;
+    display: contents;
+    cursor: pointer;
+  }
+
+  .card-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 15px;
+    z-index: 15;
+    font-size: 22px;
+    font-family: "Cinzel";
+    transition: all 0.5s;
+  }
+  .active .card-title {
+    bottom: 75%;
+    color: black;
+  }
+
+  /*CURSO DIGITALERS*/
+  .card-box-digitalers {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+  .back-digitalers {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    transition: all 0.3s;
+  }
+  .active .back-digitalers {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  .active:hover .back-digitalers {
+    background: rgba(255, 255, 255, 0.5) !important;
+  }
+  .card-box-digitalers:hover .back-digitalers {
+    background: transparent;
+  }
+
+  /*PROYECTOS */
+  .tituloP {
+    color: #34495e;
+  }
+  .contenido-color .tituloH::before {
+    border-bottom: 1px solid rgb(236, 236, 236);
+  }
+  .titulo {
+    text-transform: uppercase;
+    font-family: "Newsreader", serif;
+    color: #383e56;
+  }
+  .contenido-color::before {
+    content: "";
+    border-bottom: 1px solid black;
+    padding: 0 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    transition: 0.3s;
+  }
+  .contenido-color:hover:before {
+    width: 100%;
+    padding: 0;
+  }
+  .contenido-proyectos {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-proyectos {
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .about-proyectos h2 {
+    line-height: 1.3;
+    font-size: 2.5em;
+    font-family: "Cinzel";
+    width: 60%;
+    color: rgb(56, 62, 86);
+  }
+  .imagen-proyecto img {
+    width: 600px;
+  }
+  .imagen-proyecto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*CARDS DE PROYECTOS*/
+  .card-proyectos {
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  .tresProyectos {
+    display: flex;
+    justify-content: space-around;
+  }
+  .dosProyectos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+
+  .card-proyectos .card {
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    font-family: "Open Sans";
+    width: 300px;
+    height: 400px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: -2px 12px 14px 3px rgb(0 0 0 / 20%);
+  }
+  .card img {
+    filter: blur(0px);
+    height: 85%;
+    transition: all 1.3s;
+  }
+  .card h2 {
+    color: #333;
+    height: 10%;
+    margin: 0;
+    padding: 5%;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card .description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    padding: 2%;
+    z-index: 1;
+    opacity: 0;
+    font-weight: 300;
+    transition: all 1.3s;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description h3 {
+    color: #fff;
+    font-variant: small-caps;
+  }
+  .card:hover img {
+    filter: blur(8px);
+    transition: all 1.3s;
+  }
+  .card:hover .description {
+    transition: all 1.3s;
+    opacity: 1;
+  }
+
+  .descripcion-de-proyectos {
+    text-align: center;
+    font-family: "Cinzel";
+    font-size: 15px;
+    color: #fff;
+  }
+  /*CARDS HABILIDADES*/
+  .fondo-medio {
+    height: 800px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .contenido-color .tituloH::before {
+    border-bottom: 1px solid rgb(236, 236, 236);
+  }
+  .tituloH {
+    text-transform: uppercase;
+    font-family: "Newsreader", serif;
+    color: #ffffff;
+  }
+  .contenido-colorH::before {
+    content: "";
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 0 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    transition: 0.3s;
+  }
+  .contenido-colorH:hover:before {
+    width: 100%;
+    padding: 0;
+  }
+  .contenido-habilidades {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-habilidades {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
   }
 
   .card-habilidades .card-skills {
@@ -1208,7 +3683,13 @@ html {
     font-size: 40px;
   }
   /*footer*/
-
+  .fondo-footer {
+    height: 850px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
   .contenido-final {
     display: flex;
     justify-content: center;
@@ -1243,7 +3724,84 @@ html {
   .apellido::first-letter {
     font-size: 5rem;
     color: #ffffff;
-    /* color: rgb(187, 153, 153);*/
+  }
+  /*frases footer*/
+  .frases-footer {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .frases-footer-positivas {
+    background-color: whitesmoke;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    width: 15%;
+    height: 40px;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    filter: blur(2px);
+    -webkit-fliter: blur(2px);
+    cursor: pointer;
+  }
+
+  .frases-footer-positivas:hover {
+    background-color: inherit;
+    transform: scale(1.4);
+    color: #313131;
+    filter: blur(0);
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background-color: #fff;
+    transition: 0.4s ease-out;
+  }
+  .overlay:hover {
+    opacity: 0.6;
+  }
+  /*icons footer*/
+  .icons-footer {
+    display: flex;
+    justify-content: center;
+  }
+  .social:hover {
+    transform: scale(1.1);
+  }
+
+  .social {
+    transform: scale(0.8);
+    transition-duration: 0.5s;
+    color: rgb(170, 170, 170);
+    font-size: 50px;
+  }
+  /*
+          Colores Hover
+      */
+
+  #social-gp:hover {
+    color: #3f3f44b4;
+  }
+
+  #social-em:hover {
+    color: #a12312b2;
+  }
+
+  #social-in:hover {
+    color: #0a66c2a9;
+  }
+  .create-by {
+    font-family: "Cinzel";
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -1256,16 +3814,6 @@ a {
   background-color: #fff;
 }
 
-.row .contenido-p {
-  margin-right: 0 !important;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-.box {
-  margin-top: 200px;
-  height: auto;
-}
 .galeria {
   transition: box-shadow 500ms;
   border-radius: 2px;
@@ -1296,113 +3844,4 @@ a {
   100% {
     opacity: 1;
   }
-}
-
-/*                        FOOTEEEEEEEEEEEEEEEEER                                          */
-.container-padre {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.parrafo-final {
-  margin-top: 5%;
-}
-.fondo-footer {
-  height: 95vh;
-}
-
-/*frases footer*/
-.frases-footer {
-  margin-top: 10%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.frases-footer-positivas {
-  background-color: whitesmoke;
-  flex-direction: row;
-  justify-content: center;
-  border-radius: 5%;
-  height: 50px;
-  width: 15%;
-  transition: all 0.4s linear;
-  -webkit-transition: all 0.4s linear;
-  filter: blur(2px);
-  -webkit-fliter: blur(2px);
-  cursor: pointer;
-}
-.frases-footer-positivas:hover {
-  background-color: inherit;
-  transform: scale(1.4);
-  color: #313131;
-  filter: blur(0);
-}
-.frases-footer-positivas,
-p {
-  margin: 0 !important;
-  display: flex;
-  align-items: center;
-  font-family: "Cinzel";
-  font-size: 17px;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-  background-color: #fff;
-  transition: 0.4s ease-out;
-}
-.overlay:hover {
-  opacity: 0.6;
-}
-
-/*icons footer*/
-.icons-footer {
-  display: flex;
-  justify-content: center;
-}
-.social:hover {
-  -webkit-transform: scale(1.1);
-}
-
-.social {
-  -webkit-transform: scale(0.8);
-  -webkit-transition-duration: 0.5s;
-  color: rgb(170, 170, 170);
-  font-size: 50px;
-}
-/*
-    Colores Hover
-*/
-
-#social-fb:hover {
-  color: #3b5998;
-}
-
-#social-tw:hover {
-  color: #4099ff;
-}
-
-#social-gp:hover {
-  color: #3f3f44;
-}
-
-#social-em:hover {
-  color: #a12312;
-}
-
-#social-be:hover {
-  color: #052eff;
-}
-
-.create-by {
-  font-family: "Cinzel";
-  display: flex;
-  justify-content: center;
 }
