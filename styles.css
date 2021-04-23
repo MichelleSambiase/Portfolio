@@ -3274,7 +3274,7 @@ button.back-to-top.show:active {
     width: 100%;
   }
   .content {
-    min-height: 886px;
+    min-height: 975px;
     padding: 58px;
   }
   .navegacion {
@@ -3689,7 +3689,7 @@ button.back-to-top.show:active {
   }
   /*CARDS HABILIDADES*/
   .fondo-medio {
-    height: 800px;
+    height: 920px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
