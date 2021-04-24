@@ -703,7 +703,7 @@ button.back-to-top.show:active {
   /*footer*/
 
   .fondo-footer {
-    height: 600px;
+    height: 700px;
     display: flex;
     justify-content: center;
     flex-direction: column;
