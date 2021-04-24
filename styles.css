@@ -188,7 +188,7 @@ button.back-to-top.show {
   background: #d7e1e9;
   color: #00ab6c;
   font-size: 25px;
-  right: 25px;
+  /* right: 25px;*/
   height: 50px;
   width: 50px;
   visibility: visible;
@@ -960,21 +960,21 @@ button.back-to-top.show:active {
     width: 100%;
   }
   .division img {
-    height: 150px;
+    width: 300px;
   }
   .about-me {
     justify-content: center;
     display: flex;
   }
   .about-me h2 {
-    width: 90%;
+    width: 100%;
     line-height: 1;
-    font-size: 33px;
+    font-size: 40px;
     font-family: "Cinzel";
     font-variant: small-caps;
     color: #f8f8f8;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
   }
 
   .objeto {
