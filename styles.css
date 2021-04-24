@@ -224,6 +224,27 @@ button.back-to-top.show:active {
   }
 }
 @media screen and (max-width: 540px) {
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .navbar-collapse ul {
+    list-style-type: none;
+  }
+  .navegacion {
+    background: #ffff;
+    z-index: 100;
+    padding: 0.1em;
+    box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 75%);
+  }
+  .navbar-collapse .main-nav a {
+    text-decoration: none;
+    color: #34495e;
+    text-transform: uppercase;
+    font-family: "Cinzel";
+    font-size: 16px;
+  }
   .navbar-collapse ul {
     list-style-type: none;
   }
@@ -238,7 +259,6 @@ button.back-to-top.show:active {
   .arrows {
     position: relative;
     top: 50px;
-    cursor: pointer;
     width: 60px;
   }
   .box {
@@ -248,7 +268,7 @@ button.back-to-top.show:active {
     height: auto;
   }
   .content {
-    height: 900px;
+    height: 700px;
   }
   .galeria img {
     border-radius: 10%;
