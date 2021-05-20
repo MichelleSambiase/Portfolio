@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/png" href="imagenes/favicon.png"/>
+  <link rel="icon" type="image/png" href="imagenes/favicon.png" />
 
 
   <!-- <link rel="stylesheet" href="/normalize.css" /> -->
@@ -31,11 +31,13 @@
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-  </script>
+    </script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-  </script>
+    </script>
 
+  <script src="http://www.google.com/jsapi?key=AIzaSyA5m1Nc8ws2BbmPRwKu5gFradvD_hgq6G0" type="text/javascript"></script>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -43,6 +45,7 @@
   <!-- Font awesome -->
   <script src="https://kit.fontawesome.com/027aa4ed5c.js" crossorigin="anonymous"></script>
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
 
   <!-- CDN AOS-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -62,11 +65,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <ul class="main-nav">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#sobre-mi">Sobre mi</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#habilidades">Habilidades</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#" data-translate="Inicio">Inicio</a></li>
+          <li><a href="#sobre-mi" data-translate="SobreMi">Sobre mi</a></li>
+          <li><a href="#proyectos" data-translate="Proyectos">Proyectos</a></li>
+          <li><a href="#habilidades" data-translate="Habilidades">Habilidades</a></li>
+          <li><a href="#contacto" data-translate="Contacto">Contacto</a></li>
         </ul>
       </div>
     </nav>
@@ -77,22 +80,25 @@
     <div class="content">
       <section class="galeria">
         <div class="container-fluid">
+          <div class="buttonLanguage">
+            <button id="buttonENG" class="ENG-button">EN</button>
+            <button id="buttonES" class="ES-button">ES</button>
+          </div>
           <div class="box">
+
             <div class="row box-child">
               <div class="imagen">
                 <img src="imagenes/mujerProgramando.png" class="" alt="" />
               </div>
               <div class="contenido-yo">
                 <div class="sobreMi">
-                  <h2 id='saludo' class="linea">¡Hola!</h2>
-                  <h4 id="metas" class="ocultarMeta">Mi nombre es Michelle Sambiase y soy </h4>
-                  <h4 id="metasDos" class="ocultarMeta">desarrolladora Front-End.</h4>
+                  <h2 id='saludo' class="linea" data-translate="Hola!">¡Hola!</h2>
+                  <h4 id="metas" class="ocultarMeta" data-translate="nombre">Mi nombre es Michelle Sambiase y soy </h4>
+                  <h4 id="metasDos" class="ocultarMeta" data-translate="desarrolladora">desarrolladora Front-End.</h4>
                 </div>
               </div>
-
               <div class="scroll-down">
                 <svg class="arrows">
-                  
                   <path class="a3" d="M0 40 L30 72 L60 40"></path>
                 </svg>
               </div>
@@ -113,12 +119,12 @@
         <div class="row">
           <div class="contenido-p">
             <div class="about-me">
-              <h2 class="texto-bio" data-aos="fade-zoom-in" data-aos-duration="1000">
-                  <br />
-                  Estudio de forma autodidacta, <br />
-                   estos son algunos de los cursos realizados para mi
-                  formacion.
-                  <br />
+              <h2 class="texto-bio" data-aos="fade-zoom-in" data-aos-duration="1000" data-translate="Estudio">
+                <br />
+                Estudio de forma autodidacta, <br />
+                estos son algunos de los cursos realizados para mi
+                formacion.
+                <br />
               </h2>
             </div>
             <div class="division ">
@@ -137,7 +143,7 @@
               <h3 class="card-title"></h3>
             </div>
             <div class="card-content">
-              <p> Desarrollo Web Full Stack - Programa Codo a Codo 4.0
+              <p data-translate="cursoCodo"> Desarrollo Web Full Stack - Programa Codo a Codo 4.0
               </p>
             </div>
           </div>
@@ -151,7 +157,8 @@
               <h3 class="card-title"></h3>
             </div>
             <div class="card-content">
-              <p> Desarrollo Full Stack con .NET - Programa Digitalers - Telecom - EducacionIT </p>
+              <p data-translate="CursoEducacionIt"> Desarrollo Full Stack con .NET - Programa Digitalers - Telecom -
+                EducacionIT </p>
             </div>
           </div>
         </div>
@@ -166,7 +173,7 @@
           <div class="about-proyectos" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="800"
             data-aos-offset="0">
             <h2 class="texto-bio">
-              <span class="contenido-color tituloP">proyectos</span>
+              <span class="contenido-color tituloP" data-translate="Proyectos">proyectos</span>
               </span>
             </h2>
           </div>
@@ -183,7 +190,7 @@
             <div class="card" data-aos="fade-zoom-in" data-aos-duration="1000">
               <div class="description">
                 <h3>Skincare Page</h3>
-                <p class="descripcion-de-proyectos">
+                <p class="descripcion-de-proyectos" data-translate="SubProyectoUno">
                   Web app sobre el cuidado de la piel. Realizada con Boostrap y CSS3.
                 </p>
                 <div></div>
@@ -199,7 +206,7 @@
             <div class="card" data-aos="zoom-out" data-aos-duration="1000">
               <div class="description">
                 <h3>Drum Kit</h3>
-                <p class="descripcion-de-proyectos">
+                <p class="descripcion-de-proyectos" data-translate="SubProyectoDos">
                   Web app interactiva de bateria. Creada con JavaScript.
                 </p>
                 <div></div>
@@ -215,7 +222,7 @@
             <div class="card" data-aos="zoom-out" data-aos-duration="1000">
               <div class="description">
                 <h3>Simon Say</h3>
-                <p class="descripcion-de-proyectos">
+                <p class="descripcion-de-proyectos" data-translate="SubProyectoTres">
                   Web app El famoso Juego "Simon Dice" creada con JavaScript.
                 </p>
                 <div></div>
@@ -233,7 +240,7 @@
             <div class="card" data-aos="zoom-out" data-aos-duration="2000">
               <div class="description">
                 <h3>Dogs App</h3>
-                <p class="descripcion-de-proyectos">
+                <p class="descripcion-de-proyectos" data-translate="SubProyectoCuatro">
                   Web app creada con React.js. y CSS3. Proyecto de practica con manejo de errores.
                 </p>
                 <div></div>
@@ -248,7 +255,7 @@
             <div class="card" data-aos="zoom-out" data-aos-duration="2000">
               <div class="description">
                 <h3>To Do List</h3>
-                <p class="descripcion-de-proyectos">
+                <p class="descripcion-de-proyectos" data-translate="SubProyectoCinco">
                   Web app creada con React.js. y JSS.
                 </p>
                 <div></div>
@@ -274,7 +281,7 @@
             <div class="about-proyectos" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="800"
               data-aos-offset="0">
               <h2 class="texto-bio">
-                <span class="contenido-colorH tituloH">Habilidades</span>
+                <span class="contenido-colorH tituloH" data-translate="Habilidades">Habilidades</span>
                 </span>
               </h2>
             </div>
@@ -416,20 +423,20 @@
         <div class="frases-footer">
           <div class="frases-footer-positivas">
             <div class="efecto-blur">
-              <p>#APRENDER</p>
+              <p data-translate="APRENDER">#APRENDER</p>
             </div>
           </div>
           <div class="frases-footer-positivas">
-            <p>#EXPERIENCIAS</p>
+            <p data-translate="EXPERIENCIAS">#EXPERIENCIAS</p>
           </div>
           <div class="frases-footer-positivas">
-            <p>#PACIENCIA</p>
+            <p data-translate="PACIENCIA">#PACIENCIA</p>
           </div>
           <div class="frases-footer-positivas">
-            <p>#VALORAR</p>
+            <p data-translate="VALORAR">#VALORAR</p>
           </div>
           <div class="frases-footer-positivas">
-            <p>#ESFUERZO</p>
+            <p data-translate="ESFUERZO">#ESFUERZO</p>
           </div>
         </div>
       </div>
@@ -441,21 +448,28 @@
         data-aos-offset="-100">
         <a href="https://www.linkedin.com/in/michelle-florencia-sambiase-campos-073824110/"><i id="social-in"
             class="fab fa-linkedin-square fa-3x social"></i></a>
-        <a href="https://github.com/chelle95"><i id="social-gp" class="fa fa-github fa-3x social"></i></a>
+        <a href="https://github.com/MichelleSambiase"><i id="social-gp" class="fa fa-github fa-3x social"></i></a>
         <a href="mailto:michellesambiase@gmail.com?Subject=Ingrese%20Asunto"><i id="social-em"
             class="fa fa-envelope-square fa-3x social"></i></a>
+
       </div>
     </div>
-        <div class="contentDiv" id="content">
+    <div class="contentDiv" id="content">
       <button class="back-to-top" type="button"></button>
-      </div>
+    </div>
     <span>
-      <hr /></span>
-    <div class="create-by"><span>Creado con 💜 </span></div>
+      <hr />
+    </span>
+    <div class="create-by"><span data-translate="CREADOCON">Creado con 💜 </span></div>
   </footer>
   <script src="app.js"></script>
 
- 
+  <script src="translator.js"></script>
+
+  <!-- <script>(function () {
+      $("[data-translate]").jqTranslate('language', { defaultLang: 'es' });
+    })();
+  </script> -->
 </body>
 
 </html>

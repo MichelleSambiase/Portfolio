@@ -3,6 +3,43 @@ var intervalo;
 AOS.init();
 
 $(document).ready(function () {
+  $("#buttonENG").on('click', function (event) {
+    (function () {
+      $("[data-translate]").jqTranslate('language', {
+        defaultLang: 'es', forceLang: "en",
+        asyncLangLoad: false
+      });
+    })();
+    if (window.innerWidth >= 1400) {
+      maquinaDeEscribir(125, 777);
+
+    }
+    if (window.innerWidth >= 1201 && window.innerWidth <= 1399) {
+      maquinaDeEscribir(125, 777);
+    }
+    if (window.innerWidth >= 1025 && window.innerWidth <= 1200) {
+      maquinaDeEscribir(152, 954);
+    }
+    if (window.innerWidth >= 992 && window.innerWidth <= 1024) {
+      maquinaDeEscribir(129, 777);
+    }
+  })
+});
+
+$("#buttonES").on('click', function (event) {
+  (function () {
+    $("[data-translate]").jqTranslate('language', {
+      defaultLang: 'en', forceLang: "es",
+      asyncLangLoad: false
+    });
+  })();
+});
+
+
+
+
+
+$(document).ready(function () {
   if (window.innerWidth >= 1400) {
     maquinaDeEscribir(122, 755);
   }
@@ -26,8 +63,9 @@ $(document).ready(function () {
 
   /*Mobile*/
   if (window.innerWidth >= 541 && window.innerWidth <= 767) {
-    maquinaDeEscribir(104, 480);
+    maquinaDeEscribir(107, 480);
   }
+
 });
 
 $(".skill-percent").each(function () {
@@ -42,6 +80,7 @@ $(".skill-percent").each(function () {
 function maquinaDeEscribir(width, parrafoDosWidth) {
   var element = document.getElementById("saludo");
   intervalo = setInterval(function () {
+    //debugger;
     if (element.clientWidth == width) {
       element.classList.remove("linea");
       segundoParrafo(parrafoDosWidth);
@@ -56,14 +95,17 @@ function segundoParrafo(width) {
   elemento.classList.add("linea");
   elemento.classList.add("mostrarMeta");
   intervalo = setInterval(function () {
+    //debugger;
     if (elemento.clientWidth == width) {
       elemento.classList.remove("linea");
       tercerParrafo.classList.add("linea");
       tercerParrafo.classList.add("mostrarMetaTres");
+      elemento.classList.remove("linea");
       clearInterval(intervalo);
     }
   }, 1000);
 }
+
 
 window.onscroll = function () {
   myFunction();

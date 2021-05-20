@@ -1,0 +1,26 @@
+{
+    
+    "Inicio" : "Inicio",
+    "SobreMi": "SobreMi",
+    "Proyectos": "Proyectos",
+    "Habilidades": "Habilidadedes",
+    "Contacto": "Contacto",
+    "Hola!": "Hola!",
+    "nombre": "Mi nombre es Michelle Sambiase y soy",
+    "desarrolladora": "Desarrolladora Front-End",
+    "Estudio":"Estudio de forma autodidacta, estos son algunos de los cursos realizados para mi formacion",
+    "cursoCodo": "Desarrollo Web Full Stack - Programada Codo a Codo 4.0",
+    "CursoEducacionIt" :"Desarrollo Full Stack Con .NET - Programa Digitalers - telecom - Educacion It",
+    "proyectos":"proyectos",
+    "SubProyectoUno":"Web app sobre el cuidado de la piel. Realizada con Boostrap y CSS3.",
+    "SubProyectoDos":"Web app interactiva de bateria. Creada con JavaScript.",
+    "SubProyectoTres":" Web app El famoso Juego Simon Dice creada con JavaScript.",
+    "SubProyectoCuatro":"Web app creada con React.js. y CSS3. Proyecto de practica con manejo de errores.",
+    "SubProyectoCinco": "Web app creada con React.js. y JSS.",
+    "APRENDER":"APRENDER",
+    "EXPERIENCIAS":"EXPERIENCIAS",
+    "PACIENCIA":"PACIENCIA",
+    "VALORAR":"VALORAR",
+    "ESFUERZO":"ESFUERZO",
+    "CREADO CON": "CREADO CON"
+}
