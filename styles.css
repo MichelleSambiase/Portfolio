@@ -10,12 +10,11 @@ a {
 .navegacion {
   background-color: #fff;
 }
-
 .buttonLanguage {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  padding-top: 20px;
+  padding-top: 50px;
 }
 .ENG-button {
   background-color: #c1c1c1b8;
@@ -249,6 +248,15 @@ button.back-to-top.show:active {
   -webkit-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
 }
+.img-harry-potter {
+  width: 100%;
+}
+.img-firebase {
+  width: 100%;
+}
+.card .card-firebase {
+  margin-top: 50px !important;
+}
 
 @media screen and (max-width: 731px) {
   .tresProyectos {
@@ -305,6 +313,12 @@ button.back-to-top.show:active {
     text-transform: uppercase;
     font-family: "Cinzel";
     font-size: 16px;
+  }
+  .buttonLanguage {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 50px;
   }
   .arrows {
     position: relative;
@@ -900,6 +914,7 @@ button.back-to-top.show:active {
     font-family: "Cinzel";
     font-size: 16px;
   }
+
   .content {
     min-height: 800px;
   }
@@ -1773,9 +1788,9 @@ button.back-to-top.show:active {
   /*card de proyectos*/
   .card-proyectos {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
   .tresProyectos {
     justify-content: space-around;
@@ -2428,6 +2443,9 @@ button.back-to-top.show:active {
     filter: blur(0px);
     height: 85%;
     transition: all 1.3s;
+  }
+  .img-firebase {
+    margin-top: 50px;
   }
   .card h2 {
     color: #333;

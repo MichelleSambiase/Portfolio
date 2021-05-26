@@ -1,33 +1,27 @@
-
-    {
-        "Inicio" : "Home",
-        "SobreMi": "About me",
-        "Proyectos": "Projects",
-        "Habilidades": "Skills",
-        "Contacto": "Contact",
-        "Hola!": "Hello!",
-        "nombre": "My name is Michelle Sambiase and I am",
-        "desarrolladora": "Front-End Developer",
-        "Estudio":"I study in a self-taught way, these are some of the courses carried out for my training",
-        "cursoCodo": "Full Stack Web Development - Side by Side 4.0 Program",
-        "CursoEducacionIt" :"Full Stack Development with .NET - Program",
-        "proyectos":"projects",
-        "SubProyectoUno":"App web about Skincare, made it with Boostrap and CSS3",
-        "SubProyectoDos":"Interactive Drums App web made it with javaScript",
-        "SubProyectoTres":"The famous game web App Simon say made it with javaScript",
-        "SubProyectoCuatro":"Web app created with React.js and CSS3. Practice project with error handling",
-        "SubProyectoCinco": "Web app created with React.js and JSS.",
-        "APRENDER":"LEARN",
-        "EXPERIENCIAS":"EXPERIENCES",
-        "PACIENCIA":"PATIENCE",
-        "VALORAR":"ASSESS",
-        "ESFUERZO":"EFFORT",
-        "CREADOCON": "CREATED WITH 💜"
-
-
-
-    
-
-
-        
-    }
+{
+  "Inicio": "Home",
+  "SobreMi": "About me",
+  "Proyectos": "Projects",
+  "Habilidades": "Skills",
+  "Contacto": "Contact",
+  "Hola!": "Hello!",
+  "nombre": "My name is Michelle Sambiase and I am",
+  "desarrolladora": "Front-End Developer",
+  "Estudio": "I study in a self-taught way, these are some of the courses carried out for my training",
+  "cursoCodo": "Full Stack Web Development - Side by Side 4.0 Program",
+  "CursoEducacionIt": "Full Stack Development with .NET - Program",
+  "proyectos": "projects",
+  "SubProyectoUno": "App web about Skincare, made it with Boostrap and CSS3",
+  "SubProyectoDos": "Interactive Drums App web made it with javaScript",
+  "SubProyectoTres": "The famous game web App Simon say made it with javaScript",
+  "SubProyectoCuatro": "Web app created with React.js and CSS3. Practice project with error handling",
+  "SubProyectoCinco": "Web app created with React.js and JSS.",
+  "SubProyectoSeis": "Web app created with React.js and JSS. Practice project consuming API.",
+  "SubProyectoSiete": "Web app created with React.js and JSS. Practice project creating database in Firebase Cloud Firestore.",
+  "APRENDER": "LEARN",
+  "EXPERIENCIAS": "EXPERIENCES",
+  "PACIENCIA": "PATIENCE",
+  "VALORAR": "ASSESS",
+  "ESFUERZO": "EFFORT",
+  "CREADOCON": "CREATED WITH 💜"
+}
