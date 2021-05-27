@@ -1799,6 +1799,9 @@ button.back-to-top.show:active {
     width: 100%;
     justify-content: space-around;
   }
+  .img-firebase {
+    margin-top: 50px;
+  }
   .card-proyectos .card {
     overflow: hidden;
     position: relative;
@@ -2426,6 +2429,9 @@ button.back-to-top.show:active {
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
+  }
+  .card-firebase {
+    margin-top: 30px !important;
   }
 
   .card-proyectos .card {
@@ -3057,6 +3063,9 @@ button.back-to-top.show:active {
     align-items: center;
   }
   /*CARDS DE PROYECTOS*/
+  .card-firebase {
+    margin-top: 30px !important;
+  }
   .card-proyectos {
     justify-content: center;
     margin-top: 100px;
@@ -3717,12 +3726,14 @@ button.back-to-top.show:active {
     justify-content: space-around;
     margin-top: 50px;
   }
-
+  .card-firebase {
+    margin-top: 30px !important;
+  }
   .card-proyectos .card {
     cursor: pointer;
     overflow: hidden;
     position: relative;
-    margin: 0 auto;
+
     font-family: "Open Sans";
     width: 300px;
     height: 400px;
